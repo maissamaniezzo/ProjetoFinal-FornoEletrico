@@ -36,9 +36,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "24 ./lcd.h
 [; ;./lcd.h: 24:  void lcdData(unsigned char valor);
 [v _lcdData `(v ~T0 @X0 0 ef1`uc ]
-"27 ./adc.h
-[; ;./adc.h: 27: void adc_init(void);
-[v _adc_init `(v ~T0 @X0 0 ef ]
 "26 ./pwm.h
 [; ;./pwm.h: 26:  void pwmInit(void);
 [v _pwmInit `(v ~T0 @X0 0 ef ]
@@ -593,412 +590,402 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _tecla `ui ~T0 @X0 1 a ]
 [e = _tecla -> -> 16 `i `ui ]
 "19
-[; ;main.c: 19:     unsigned long int cont = 0;
-[v _cont `ul ~T0 @X0 1 a ]
-[e = _cont -> -> -> 0 `i `l `ul ]
-"20
-[; ;main.c: 20:     unsigned int temperatura = 180, temperaturaMaxima, temperaturaMinima;
+[; ;main.c: 19:     unsigned int temperatura = 180, temperaturaMaxima, temperaturaMinima;
 [v _temperatura `ui ~T0 @X0 1 a ]
 [e = _temperatura -> -> 180 `i `ui ]
 [v _temperaturaMaxima `ui ~T0 @X0 1 a ]
 [v _temperaturaMinima `ui ~T0 @X0 1 a ]
-"21
-[; ;main.c: 21:     char minutosCentena = 48, minutosDezena = 48, minutosUnidade = 48;
+"20
+[; ;main.c: 20:     char minutosCentena = 48, minutosDezena = 48, minutosUnidade = 48;
 [v _minutosCentena `uc ~T0 @X0 1 a ]
 [e = _minutosCentena -> -> 48 `i `uc ]
 [v _minutosDezena `uc ~T0 @X0 1 a ]
 [e = _minutosDezena -> -> 48 `i `uc ]
 [v _minutosUnidade `uc ~T0 @X0 1 a ]
 [e = _minutosUnidade -> -> 48 `i `uc ]
-"23
-[; ;main.c: 23:     char str[6];
+"22
+[; ;main.c: 22:     char str[6];
 [v _str `uc ~T0 @X0 -> 6 `i a ]
-"24
-[; ;main.c: 24:     char tempoRelogio[6];
+"23
+[; ;main.c: 23:     char tempoRelogio[6];
 [v _tempoRelogio `uc ~T0 @X0 -> 6 `i a ]
-"25
-[; ;main.c: 25:     unsigned int tmpi, temperaturaLcd, tempoTotal = 0;
+"24
+[; ;main.c: 24:     unsigned int tmpi, temperaturaLcd, tempoTotal = 0;
 [v _tmpi `ui ~T0 @X0 1 a ]
 [v _temperaturaLcd `ui ~T0 @X0 1 a ]
 [v _tempoTotal `ui ~T0 @X0 1 a ]
 [e = _tempoTotal -> -> 0 `i `ui ]
-"27
-[; ;main.c: 27:     TRISA = 0x07;
+"26
+[; ;main.c: 26:     TRISA = 0x07;
 [e = _TRISA -> -> 7 `i `uc ]
-"28
-[; ;main.c: 28:     TRISB = 0x00;
+"27
+[; ;main.c: 27:     TRISB = 0x00;
 [e = _TRISB -> -> 0 `i `uc ]
-"29
-[; ;main.c: 29:     TRISC = 0x00;
+"28
+[; ;main.c: 28:     TRISC = 0x00;
 [e = _TRISC -> -> 0 `i `uc ]
-"31
-[; ;main.c: 31:     lcdInit();
+"30
+[; ;main.c: 30:     lcdInit();
 [e ( _lcdInit ..  ]
-"32
-[; ;main.c: 32:     kpInit();
+"31
+[; ;main.c: 31:     kpInit();
 [e ( _kpInit ..  ]
-"34
-[; ;main.c: 34:     for (;;) {
+"33
+[; ;main.c: 33:     for (;;) {
 {
 [e :U 277 ]
 {
-"35
-[; ;main.c: 35:         cont++;
-[e ++ _cont -> -> -> 1 `i `l `ul ]
-"36
-[; ;main.c: 36:         lcdPosition(0, 1);
+"34
+[; ;main.c: 34:         lcdPosition(0, 1);
 [e ( _lcdPosition (2 , -> -> 0 `i `uc -> -> 1 `i `uc ]
-"38
-[; ;main.c: 38:         lcd_str("Vamos iniciar!");
+"36
+[; ;main.c: 36:         lcd_str("Vamos iniciar!");
 [e ( _lcd_str (1 :s 1C ]
-"39
-[; ;main.c: 39:         lcdPosition(1, 1);
+"37
+[; ;main.c: 37:         lcdPosition(1, 1);
 [e ( _lcdPosition (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
-"40
-[; ;main.c: 40:         lcd_str("Clique em (1)");
+"38
+[; ;main.c: 38:         lcd_str("Clique em (1)");
 [e ( _lcd_str (1 :s 2C ]
-"42
-[; ;main.c: 42:         kpDebounce();
+"40
+[; ;main.c: 40:         kpDebounce();
 [e ( _kpDebounce ..  ]
-"43
-[; ;main.c: 43:         if (kpRead() != tecla) {
+"41
+[; ;main.c: 41:         if (kpRead() != tecla) {
 [e $ ! != ( _kpRead ..  _tecla 280  ]
 {
-"44
-[; ;main.c: 44:             tecla = kpRead();
+"42
+[; ;main.c: 42:             tecla = kpRead();
 [e = _tecla ( _kpRead ..  ]
-"45
-[; ;main.c: 45:             if (((tecla) & (1<<(3)))) {
+"43
+[; ;main.c: 43:             if (((tecla) & (1<<(3)))) {
 [e $ ! != & _tecla -> << -> 1 `i -> 3 `i `ui -> -> 0 `i `ui 281  ]
 {
-"46
-[; ;main.c: 46:                 lcdCommand(0x01);
+"44
+[; ;main.c: 44:                 lcdCommand(0x01);
 [e ( _lcdCommand (1 -> -> 1 `i `uc ]
-"47
-[; ;main.c: 47:                 while (!((tecla) & (1<<(0)))) {
+"45
+[; ;main.c: 45:                 while (!((tecla) & (1<<(0)))) {
 [e $U 282  ]
 [e :U 283 ]
 {
-"49
-[; ;main.c: 49:                     lcdPosition(0, 0);
+"47
+[; ;main.c: 47:                     lcdPosition(0, 0);
 [e ( _lcdPosition (2 , -> -> 0 `i `uc -> -> 0 `i `uc ]
-"50
-[; ;main.c: 50:                     lcd_str("Temperatura:");
+"48
+[; ;main.c: 48:                     lcd_str("Temperatura:");
 [e ( _lcd_str (1 :s 3C ]
-"51
-[; ;main.c: 51:                     temperatura = setTemperature();
+"49
+[; ;main.c: 49:                     temperatura = setTemperature();
 [e = _temperatura -> ( _setTemperature ..  `ui ]
-"54
-[; ;main.c: 54:                     lcdPosition(1, 0);
+"52
+[; ;main.c: 52:                     lcdPosition(1, 0);
 [e ( _lcdPosition (2 , -> -> 1 `i `uc -> -> 0 `i `uc ]
-"55
-[; ;main.c: 55:                     lcd_str("Tempo:");
+"53
+[; ;main.c: 53:                     lcd_str("Tempo:");
 [e ( _lcd_str (1 :s 4C ]
-"56
-[; ;main.c: 56:                     lcdPosition(1, 6);
+"54
+[; ;main.c: 54:                     lcdPosition(1, 6);
 [e ( _lcdPosition (2 , -> -> 1 `i `uc -> -> 6 `i `uc ]
-"57
-[; ;main.c: 57:                     lcdData((char)minutosCentena);
+"55
+[; ;main.c: 55:                     lcdData((char)minutosCentena);
 [e ( _lcdData (1 -> _minutosCentena `uc ]
-"58
-[; ;main.c: 58:                     lcdData((char)minutosDezena);
+"56
+[; ;main.c: 56:                     lcdData((char)minutosDezena);
 [e ( _lcdData (1 -> _minutosDezena `uc ]
-"59
-[; ;main.c: 59:                     lcdData((char)minutosUnidade);
+"57
+[; ;main.c: 57:                     lcdData((char)minutosUnidade);
 [e ( _lcdData (1 -> _minutosUnidade `uc ]
-"60
-[; ;main.c: 60:                     lcd_str("min");
+"58
+[; ;main.c: 58:                     lcd_str("min");
 [e ( _lcd_str (1 :s 5C ]
-"63
-[; ;main.c: 63:                     kpDebounce();
+"61
+[; ;main.c: 61:                     kpDebounce();
 [e ( _kpDebounce ..  ]
-"64
-[; ;main.c: 64:                     if (kpRead() != tecla) {
+"62
+[; ;main.c: 62:                     if (kpRead() != tecla) {
 [e $ ! != ( _kpRead ..  _tecla 285  ]
 {
-"65
-[; ;main.c: 65:                         tecla = kpRead();
+"63
+[; ;main.c: 63:                         tecla = kpRead();
 [e = _tecla ( _kpRead ..  ]
-"66
-[; ;main.c: 66:                         if (((tecla) & (1<<(1)))) {
+"64
+[; ;main.c: 64:                         if (((tecla) & (1<<(1)))) {
 [e $ ! != & _tecla -> << -> 1 `i -> 1 `i `ui -> -> 0 `i `ui 286  ]
 {
-"67
-[; ;main.c: 67:                             if (minutosCentena == 57) {
+"65
+[; ;main.c: 65:                             if (minutosCentena == 57) {
 [e $ ! == -> _minutosCentena `i -> 57 `i 287  ]
 {
-"68
-[; ;main.c: 68:                                 minutosCentena = 48;
+"66
+[; ;main.c: 66:                                 minutosCentena = 48;
 [e = _minutosCentena -> -> 48 `i `uc ]
-"69
-[; ;main.c: 69:                             } else {
+"67
+[; ;main.c: 67:                             } else {
 }
 [e $U 288  ]
 [e :U 287 ]
 {
-"70
-[; ;main.c: 70:                                 minutosCentena += 1;
+"68
+[; ;main.c: 68:                                 minutosCentena += 1;
 [e =+ _minutosCentena -> -> 1 `i `uc ]
-"71
-[; ;main.c: 71:                                 tempoTotal += 100;
+"69
+[; ;main.c: 69:                                 tempoTotal += 100;
 [e =+ _tempoTotal -> -> 100 `i `ui ]
-"72
-[; ;main.c: 72:                             }
+"70
+[; ;main.c: 70:                             }
 }
 [e :U 288 ]
-"73
-[; ;main.c: 73:                         } else if (((tecla) & (1<<(5)))) {
+"71
+[; ;main.c: 71:                         } else if (((tecla) & (1<<(5)))) {
 }
 [e $U 289  ]
 [e :U 286 ]
 [e $ ! != & _tecla -> << -> 1 `i -> 5 `i `ui -> -> 0 `i `ui 290  ]
 {
-"74
-[; ;main.c: 74:                             if (minutosDezena == 57) {
+"72
+[; ;main.c: 72:                             if (minutosDezena == 57) {
 [e $ ! == -> _minutosDezena `i -> 57 `i 291  ]
 {
-"75
-[; ;main.c: 75:                                 minutosDezena = 48;
+"73
+[; ;main.c: 73:                                 minutosDezena = 48;
 [e = _minutosDezena -> -> 48 `i `uc ]
-"76
-[; ;main.c: 76:                             } else {
+"74
+[; ;main.c: 74:                             } else {
 }
 [e $U 292  ]
 [e :U 291 ]
 {
-"77
-[; ;main.c: 77:                                 minutosDezena += 1;
+"75
+[; ;main.c: 75:                                 minutosDezena += 1;
 [e =+ _minutosDezena -> -> 1 `i `uc ]
-"78
-[; ;main.c: 78:                                 tempoTotal += 10;
+"76
+[; ;main.c: 76:                                 tempoTotal += 10;
 [e =+ _tempoTotal -> -> 10 `i `ui ]
-"79
-[; ;main.c: 79:                             }
+"77
+[; ;main.c: 77:                             }
 }
 [e :U 292 ]
-"80
-[; ;main.c: 80:                         } else if (((tecla) & (1<<(9)))) {
+"78
+[; ;main.c: 78:                         } else if (((tecla) & (1<<(9)))) {
 }
 [e $U 293  ]
 [e :U 290 ]
 [e $ ! != & _tecla -> << -> 1 `i -> 9 `i `ui -> -> 0 `i `ui 294  ]
 {
-"81
-[; ;main.c: 81:                             if (minutosUnidade == 57) {
+"79
+[; ;main.c: 79:                             if (minutosUnidade == 57) {
 [e $ ! == -> _minutosUnidade `i -> 57 `i 295  ]
 {
-"82
-[; ;main.c: 82:                                 minutosUnidade = 48;
+"80
+[; ;main.c: 80:                                 minutosUnidade = 48;
 [e = _minutosUnidade -> -> 48 `i `uc ]
-"83
-[; ;main.c: 83:                             } else {
+"81
+[; ;main.c: 81:                             } else {
 }
 [e $U 296  ]
 [e :U 295 ]
 {
-"84
-[; ;main.c: 84:                                 minutosUnidade += 1;
+"82
+[; ;main.c: 82:                                 minutosUnidade += 1;
 [e =+ _minutosUnidade -> -> 1 `i `uc ]
-"85
-[; ;main.c: 85:                                 tempoTotal += 1;
+"83
+[; ;main.c: 83:                                 tempoTotal += 1;
 [e =+ _tempoTotal -> -> 1 `i `ui ]
-"86
-[; ;main.c: 86:                             }
+"84
+[; ;main.c: 84:                             }
 }
 [e :U 296 ]
-"87
-[; ;main.c: 87:                         }
+"85
+[; ;main.c: 85:                         }
 }
 [e :U 294 ]
 [e :U 293 ]
 [e :U 289 ]
-"88
-[; ;main.c: 88:                     }
+"86
+[; ;main.c: 86:                     }
 }
 [e :U 285 ]
-"89
-[; ;main.c: 89:                 }
+"87
+[; ;main.c: 87:                 }
 }
 [e :U 282 ]
-"47
-[; ;main.c: 47:                 while (!((tecla) & (1<<(0)))) {
+"45
+[; ;main.c: 45:                 while (!((tecla) & (1<<(0)))) {
 [e $ ! != & _tecla -> << -> 1 `i -> 0 `i `ui -> -> 0 `i `ui 283  ]
 [e :U 284 ]
-"91
-[; ;main.c: 91:                 if (((tecla) & (1<<(0)))) {
+"89
+[; ;main.c: 89:                 if (((tecla) & (1<<(0)))) {
 [e $ ! != & _tecla -> << -> 1 `i -> 0 `i `ui -> -> 0 `i `ui 297  ]
 {
-"92
-[; ;main.c: 92:                     lcdCommand(0x01);
+"90
+[; ;main.c: 90:                     lcdCommand(0x01);
 [e ( _lcdCommand (1 -> -> 1 `i `uc ]
-"94
-[; ;main.c: 94:                     adc_init();
-[e ( _adc_init ..  ]
-"96
-[; ;main.c: 96:                     temperaturaMaxima = temperatura + 10;
+"92
+[; ;main.c: 92:                     temperaturaMaxima = temperatura + 10;
 [e = _temperaturaMaxima + _temperatura -> -> 10 `i `ui ]
-"97
-[; ;main.c: 97:                     temperaturaMinima = temperatura - 10;
+"93
+[; ;main.c: 93:                     temperaturaMinima = temperatura - 10;
 [e = _temperaturaMinima - _temperatura -> -> 10 `i `ui ]
-"100
-[; ;main.c: 100:                     pwmInit();
+"96
+[; ;main.c: 96:                     pwmInit();
 [e ( _pwmInit ..  ]
-"101
-[; ;main.c: 101:                     pwmSet1(30);
+"97
+[; ;main.c: 97:                     pwmSet1(30);
 [e ( _pwmSet1 (1 -> -> 30 `i `uc ]
-"103
-[; ;main.c: 103:                     PORTB = 0xFF;
+"99
+[; ;main.c: 99:                     PORTB = 0xFF;
 [e = _PORTB -> -> 255 `i `uc ]
-"105
-[; ;main.c: 105:                     while ((!((tecla) & (1<<(4))) && (tempoTotal > 0))) {
+"101
+[; ;main.c: 101:                     while ((!((tecla) & (1<<(4))) && (tempoTotal > 0))) {
 [e $U 298  ]
 [e :U 299 ]
 {
-"106
-[; ;main.c: 106:                         lcdCommand(0x01);
+"102
+[; ;main.c: 102:                         lcdCommand(0x01);
 [e ( _lcdCommand (1 -> -> 1 `i `uc ]
-"108
-[; ;main.c: 108:                         lcdPosition(0, 2);
+"104
+[; ;main.c: 104:                         lcdPosition(0, 2);
 [e ( _lcdPosition (2 , -> -> 0 `i `uc -> -> 2 `i `uc ]
-"109
-[; ;main.c: 109:                         lcd_str("Funcionando!");
+"105
+[; ;main.c: 105:                         lcd_str("Funcionando!");
 [e ( _lcd_str (1 :s 6C ]
-"111
-[; ;main.c: 111:                         lcdPosition(1, 9);
+"107
+[; ;main.c: 107:                         lcdPosition(1, 9);
 [e ( _lcdPosition (2 , -> -> 1 `i `uc -> -> 9 `i `uc ]
-"112
-[; ;main.c: 112:                         itoa(tempoTotal, tempoRelogio);
+"108
+[; ;main.c: 108:                         itoa(tempoTotal, tempoRelogio);
 [e ( _itoa (2 , _tempoTotal &U _tempoRelogio ]
-"113
-[; ;main.c: 113:                         lcdData(tempoRelogio[2]);
+"109
+[; ;main.c: 109:                         lcdData(tempoRelogio[2]);
 [e ( _lcdData (1 -> *U + &U _tempoRelogio * -> -> -> 2 `i `ui `ux -> -> # *U &U _tempoRelogio `ui `ux `uc ]
-"114
-[; ;main.c: 114:                         lcdData(tempoRelogio[3]);
+"110
+[; ;main.c: 110:                         lcdData(tempoRelogio[3]);
 [e ( _lcdData (1 -> *U + &U _tempoRelogio * -> -> -> 3 `i `ui `ux -> -> # *U &U _tempoRelogio `ui `ux `uc ]
-"115
-[; ;main.c: 115:                         lcdData(tempoRelogio[4]);
+"111
+[; ;main.c: 111:                         lcdData(tempoRelogio[4]);
 [e ( _lcdData (1 -> *U + &U _tempoRelogio * -> -> -> 4 `i `ui `ux -> -> # *U &U _tempoRelogio `ui `ux `uc ]
-"116
-[; ;main.c: 116:                         lcd_str("min");
+"112
+[; ;main.c: 112:                         lcd_str("min");
 [e ( _lcd_str (1 :s 7C ]
-"117
-[; ;main.c: 117:                         tempoTotal--;
+"113
+[; ;main.c: 113:                         tempoTotal--;
 [e -- _tempoTotal -> -> 1 `i `ui ]
-"120
-[; ;main.c: 120:                         tmpi = (adc_amostra(1)*10) / 2;
+"116
+[; ;main.c: 116:                         tmpi = (adc_amostra(1)*10) / 2;
 [e = _tmpi / * ( _adc_amostra (1 -> -> 1 `i `uc -> -> 10 `i `ui -> -> 2 `i `ui ]
-"121
-[; ;main.c: 121:                         temperaturaLcd = ((tmpi - 280) * 222 / 46) + 280;
+"117
+[; ;main.c: 117:                         temperaturaLcd = ((tmpi - 280) * 222 / 46) + 280;
 [e = _temperaturaLcd + / * - _tmpi -> -> 280 `i `ui -> -> 222 `i `ui -> -> 46 `i `ui -> -> 280 `i `ui ]
-"124
-[; ;main.c: 124:                         lcdPosition(1, 1);
+"120
+[; ;main.c: 120:                         lcdPosition(1, 1);
 [e ( _lcdPosition (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
-"125
-[; ;main.c: 125:                         itoa(temperaturaLcd, str);
+"121
+[; ;main.c: 121:                         itoa(temperaturaLcd, str);
 [e ( _itoa (2 , _temperaturaLcd &U _str ]
-"126
-[; ;main.c: 126:                         lcdData(str[1]);
+"122
+[; ;main.c: 122:                         lcdData(str[1]);
 [e ( _lcdData (1 -> *U + &U _str * -> -> -> 1 `i `ui `ux -> -> # *U &U _str `ui `ux `uc ]
-"127
-[; ;main.c: 127:                         lcdData(str[2]);
+"123
+[; ;main.c: 123:                         lcdData(str[2]);
 [e ( _lcdData (1 -> *U + &U _str * -> -> -> 2 `i `ui `ux -> -> # *U &U _str `ui `ux `uc ]
-"128
-[; ;main.c: 128:                         lcdData(str[3]);
+"124
+[; ;main.c: 124:                         lcdData(str[3]);
 [e ( _lcdData (1 -> *U + &U _str * -> -> -> 3 `i `ui `ux -> -> # *U &U _str `ui `ux `uc ]
-"129
-[; ;main.c: 129:                         lcdData(',');
+"125
+[; ;main.c: 125:                         lcdData(',');
 [e ( _lcdData (1 -> -> 44 `ui `uc ]
-"130
-[; ;main.c: 130:                         lcdData(str[4]);
+"126
+[; ;main.c: 126:                         lcdData(str[4]);
 [e ( _lcdData (1 -> *U + &U _str * -> -> -> 4 `i `ui `ux -> -> # *U &U _str `ui `ux `uc ]
-"131
-[; ;main.c: 131:                         lcd_str("C");
+"127
+[; ;main.c: 127:                         lcd_str("C");
 [e ( _lcd_str (1 :s 8C ]
-"133
-[; ;main.c: 133:                         atraso_ms(1000);
+"129
+[; ;main.c: 129:                         atraso_ms(1000);
 [e ( _atraso_ms (1 -> -> 1000 `i `ui ]
-"136
-[; ;main.c: 136:                         if (temperaturaLcd > temperaturaMaxima * 10) {
+"132
+[; ;main.c: 132:                         if (temperaturaLcd > temperaturaMaxima * 10) {
 [e $ ! > _temperaturaLcd * _temperaturaMaxima -> -> 10 `i `ui 301  ]
 {
-"137
-[; ;main.c: 137:                             atraso_ms(100);
+"133
+[; ;main.c: 133:                             atraso_ms(100);
 [e ( _atraso_ms (1 -> -> 100 `i `ui ]
-"138
-[; ;main.c: 138:                             PORTCbits.RC5 = 0;
+"134
+[; ;main.c: 134:                             PORTCbits.RC5 = 0;
 [e = . . _PORTCbits 0 5 -> -> 0 `i `uc ]
+"135
+[; ;main.c: 135:                         }
+}
+[e :U 301 ]
+"137
+[; ;main.c: 137:                         if (temperaturaLcd < temperaturaMinima * 10) {
+[e $ ! < _temperaturaLcd * _temperaturaMinima -> -> 10 `i `ui 302  ]
+{
+"138
+[; ;main.c: 138:                             PORTCbits.RC5 = 1;
+[e = . . _PORTCbits 0 5 -> -> 1 `i `uc ]
 "139
 [; ;main.c: 139:                         }
 }
-[e :U 301 ]
-"141
-[; ;main.c: 141:                         if (temperaturaLcd < temperaturaMinima * 10) {
-[e $ ! < _temperaturaLcd * _temperaturaMinima -> -> 10 `i `ui 302  ]
-{
-"142
-[; ;main.c: 142:                             PORTCbits.RC5 = 1;
-[e = . . _PORTCbits 0 5 -> -> 1 `i `uc ]
-"143
-[; ;main.c: 143:                         }
-}
 [e :U 302 ]
-"145
-[; ;main.c: 145:                         kpDebounce();
+"141
+[; ;main.c: 141:                         kpDebounce();
 [e ( _kpDebounce ..  ]
-"146
-[; ;main.c: 146:                         if (kpRead() != tecla) {
+"142
+[; ;main.c: 142:                         if (kpRead() != tecla) {
 [e $ ! != ( _kpRead ..  _tecla 303  ]
 {
-"147
-[; ;main.c: 147:                             tecla = kpRead();
+"143
+[; ;main.c: 143:                             tecla = kpRead();
 [e = _tecla ( _kpRead ..  ]
-"148
-[; ;main.c: 148:                         }
+"144
+[; ;main.c: 144:                         }
 }
 [e :U 303 ]
-"149
-[; ;main.c: 149:                     }
+"145
+[; ;main.c: 145:                     }
 }
 [e :U 298 ]
-"105
-[; ;main.c: 105:                     while ((!((tecla) & (1<<(4))) && (tempoTotal > 0))) {
+"101
+[; ;main.c: 101:                     while ((!((tecla) & (1<<(4))) && (tempoTotal > 0))) {
 [e $ && ! != & _tecla -> << -> 1 `i -> 4 `i `ui -> -> 0 `i `ui > _tempoTotal -> -> 0 `i `ui 299  ]
 [e :U 300 ]
-"150
-[; ;main.c: 150:                 }
+"146
+[; ;main.c: 146:                 }
 }
 [e :U 297 ]
-"151
-[; ;main.c: 151:                 PORTB = 0x00;
+"147
+[; ;main.c: 147:                 PORTB = 0x00;
 [e = _PORTB -> -> 0 `i `uc ]
-"152
-[; ;main.c: 152:                 lcdCommand(0x01);
+"148
+[; ;main.c: 148:                 lcdCommand(0x01);
 [e ( _lcdCommand (1 -> -> 1 `i `uc ]
-"153
-[; ;main.c: 153:                 PORTCbits.RC5 = 0;
+"149
+[; ;main.c: 149:                 PORTCbits.RC5 = 0;
 [e = . . _PORTCbits 0 5 -> -> 0 `i `uc ]
-"154
-[; ;main.c: 154:                 TRISCbits.TRISC0 = 0;
+"150
+[; ;main.c: 150:                 TRISCbits.TRISC0 = 0;
 [e = . . _TRISCbits 0 0 -> -> 0 `i `uc ]
-"155
-[; ;main.c: 155:                 pwmSet1(0);
+"151
+[; ;main.c: 151:                 pwmSet1(0);
 [e ( _pwmSet1 (1 -> -> 0 `i `uc ]
-"156
-[; ;main.c: 156:             }
+"152
+[; ;main.c: 152:             }
 }
 [e :U 281 ]
-"157
-[; ;main.c: 157:         }
+"153
+[; ;main.c: 153:         }
 }
 [e :U 280 ]
-"158
-[; ;main.c: 158:     }
+"154
+[; ;main.c: 154:     }
 }
 [e $U 277  ]
 [e :U 278 ]
 }
-"159
-[; ;main.c: 159: }
+"155
+[; ;main.c: 155: }
 [e :UE 276 ]
 }
 [a 5C 109 105 110 0 ]

@@ -4447,7 +4447,6 @@ void itoa(unsigned int val, char* str );
 
 void main(void) {
     unsigned int tecla = 16;
-    unsigned long int cont = 0;
     unsigned int temperatura = 180, temperaturaMaxima, temperaturaMinima;
     char minutosCentena = 48, minutosDezena = 48, minutosUnidade = 48;
 
@@ -4463,7 +4462,6 @@ void main(void) {
     kpInit();
 
     for (;;) {
-        cont++;
         lcdPosition(0, 1);
 
         lcd_str("Vamos iniciar!");
@@ -4521,8 +4519,6 @@ void main(void) {
 
                 if (((tecla) & (1<<(0)))) {
                     lcdCommand(0x01);
-
-                    adc_init();
 
                     temperaturaMaxima = temperatura + 10;
                     temperaturaMinima = temperatura - 10;
