@@ -269,7 +269,7 @@ PIN_E7 39
 [v main@minutosUnidade minutosUnidade `uc  1 a 1 61 ]
 [v main@minutosDezena minutosDezena `uc  1 a 1 60 ]
 [v main@minutosCentena minutosCentena `uc  1 a 1 59 ]
-"155
+"168
 } 0
 "7 /home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/temperaturaForno.c
 [v _setTemperature setTemperature `(i  1 e 2 0 ]

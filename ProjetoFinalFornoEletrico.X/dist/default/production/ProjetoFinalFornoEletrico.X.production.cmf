@@ -11,7 +11,7 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$/tmp/xcXlDhdEo.o
+$/tmp/xcXMnlPAC.o
 idloc IDLOC 5 200000 200000 8 1
 init CODE 0 0 0 4 1
 config CONFIG 4 300000 300000 E 1
@@ -325,99 +325,99 @@ C8C text13 CODE >73:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFo
 6AA text0 CODE >40:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
 6AE text0 CODE >41:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
 6CA text0 CODE >42:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-6D6 text0 CODE >43:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-6E4 text0 CODE >44:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-6EA text0 CODE >45:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-6EE text0 CODE >47:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-6F8 text0 CODE >48:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-704 text0 CODE >49:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-710 text0 CODE >52:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-71A text0 CODE >53:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-726 text0 CODE >54:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-730 text0 CODE >55:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-736 text0 CODE >56:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-73C text0 CODE >57:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-742 text0 CODE >58:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-74E text0 CODE >61:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-752 text0 CODE >62:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-76E text0 CODE >63:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-77A text0 CODE >64:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-788 text0 CODE >65:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-79A text0 CODE >66:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-79E text0 CODE >67:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-7A2 text0 CODE >68:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-7A4 text0 CODE >69:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-7B0 text0 CODE >71:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-7BE text0 CODE >72:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-7D0 text0 CODE >73:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-7D4 text0 CODE >74:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-7D8 text0 CODE >75:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-7DA text0 CODE >76:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-7E6 text0 CODE >78:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-7F4 text0 CODE >79:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-806 text0 CODE >80:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-80A text0 CODE >81:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-80E text0 CODE >82:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-810 text0 CODE >83:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-818 text0 CODE >45:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-818 text0 CODE >86:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-826 text0 CODE >89:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-834 text0 CODE >90:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-83A text0 CODE >92:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-846 text0 CODE >93:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-852 text0 CODE >96:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-856 text0 CODE >97:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-85C text0 CODE >99:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-85E text0 CODE >101:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-862 text0 CODE >102:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-868 text0 CODE >104:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-872 text0 CODE >105:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-87E text0 CODE >107:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-888 text0 CODE >108:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-89C text0 CODE >109:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-8A2 text0 CODE >110:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-8A8 text0 CODE >111:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-8AE text0 CODE >112:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-8BA text0 CODE >113:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-8C0 text0 CODE >116:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-8E8 text0 CODE >117:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-920 text0 CODE >120:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-92A text0 CODE >121:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-93E text0 CODE >122:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-944 text0 CODE >123:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-94A text0 CODE >124:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-950 text0 CODE >125:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-956 text0 CODE >126:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-95C text0 CODE >127:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-968 text0 CODE >129:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-974 text0 CODE >132:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-99E text0 CODE >133:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-9AA text0 CODE >134:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-9AC text0 CODE >137:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-9D6 text0 CODE >138:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-9D8 text0 CODE >141:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-9DC text0 CODE >142:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-9F8 text0 CODE >143:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-A04 text0 CODE >101:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-A24 text0 CODE >147:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-A28 text0 CODE >148:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-A2E text0 CODE >149:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-A30 text0 CODE >150:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-A32 text0 CODE >151:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-1646 cinit CODE >2264:/tmp/xcXMiEmNM.s
-1646 cinit CODE >2266:/tmp/xcXMiEmNM.s
-1646 cinit CODE >2269:/tmp/xcXMiEmNM.s
-1646 cinit CODE >2304:/tmp/xcXMiEmNM.s
-164A cinit CODE >2305:/tmp/xcXMiEmNM.s
-164C cinit CODE >2306:/tmp/xcXMiEmNM.s
-164C cinit CODE >2307:/tmp/xcXMiEmNM.s
-164E cinit CODE >2308:/tmp/xcXMiEmNM.s
-1650 cinit CODE >2309:/tmp/xcXMiEmNM.s
-1652 cinit CODE >2315:/tmp/xcXMiEmNM.s
-1652 cinit CODE >2318:/tmp/xcXMiEmNM.s
-1654 cinit CODE >2319:/tmp/xcXMiEmNM.s
-1656 cinit CODE >2320:/tmp/xcXMiEmNM.s
-1658 cinit CODE >2321:/tmp/xcXMiEmNM.s
+6D6 text0 CODE >45:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+6E4 text0 CODE >46:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+6EA text0 CODE >49:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+6EE text0 CODE >52:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+6F8 text0 CODE >53:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+704 text0 CODE >54:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+710 text0 CODE >58:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+71A text0 CODE >59:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+726 text0 CODE >60:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+730 text0 CODE >61:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+736 text0 CODE >62:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+73C text0 CODE >63:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+742 text0 CODE >64:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+74E text0 CODE >66:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+752 text0 CODE >67:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+76E text0 CODE >68:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+77A text0 CODE >69:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+788 text0 CODE >70:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+79A text0 CODE >71:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+79E text0 CODE >72:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+7A2 text0 CODE >73:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+7A4 text0 CODE >74:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+7B0 text0 CODE >76:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+7BE text0 CODE >77:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+7D0 text0 CODE >78:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+7D4 text0 CODE >79:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+7D8 text0 CODE >80:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+7DA text0 CODE >81:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+7E6 text0 CODE >83:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+7F4 text0 CODE >84:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+806 text0 CODE >85:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+80A text0 CODE >86:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+80E text0 CODE >87:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+810 text0 CODE >88:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+818 text0 CODE >49:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+818 text0 CODE >91:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+826 text0 CODE >96:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+834 text0 CODE >97:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+83A text0 CODE >100:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+846 text0 CODE >101:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+852 text0 CODE >104:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+856 text0 CODE >105:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+85C text0 CODE >108:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+85E text0 CODE >111:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+862 text0 CODE >112:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+868 text0 CODE >114:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+872 text0 CODE >115:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+87E text0 CODE >118:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+888 text0 CODE >119:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+89C text0 CODE >120:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+8A2 text0 CODE >121:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+8A8 text0 CODE >122:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+8AE text0 CODE >123:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+8BA text0 CODE >124:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+8C0 text0 CODE >127:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+8E8 text0 CODE >128:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+920 text0 CODE >131:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+92A text0 CODE >132:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+93E text0 CODE >133:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+944 text0 CODE >134:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+94A text0 CODE >135:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+950 text0 CODE >136:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+956 text0 CODE >137:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+95C text0 CODE >138:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+968 text0 CODE >140:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+974 text0 CODE >143:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+99E text0 CODE >144:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+9AA text0 CODE >145:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+9AC text0 CODE >147:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+9D6 text0 CODE >148:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+9D8 text0 CODE >152:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+9DC text0 CODE >153:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+9F8 text0 CODE >154:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+A04 text0 CODE >111:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+A24 text0 CODE >159:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+A2A text0 CODE >160:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+A2E text0 CODE >161:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+A30 text0 CODE >162:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+A32 text0 CODE >163:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+1646 cinit CODE >2264:/tmp/xcXOILIHd.s
+1646 cinit CODE >2266:/tmp/xcXOILIHd.s
+1646 cinit CODE >2269:/tmp/xcXOILIHd.s
+1646 cinit CODE >2304:/tmp/xcXOILIHd.s
+164A cinit CODE >2305:/tmp/xcXOILIHd.s
+164C cinit CODE >2306:/tmp/xcXOILIHd.s
+164C cinit CODE >2307:/tmp/xcXOILIHd.s
+164E cinit CODE >2308:/tmp/xcXOILIHd.s
+1650 cinit CODE >2309:/tmp/xcXOILIHd.s
+1652 cinit CODE >2315:/tmp/xcXOILIHd.s
+1652 cinit CODE >2318:/tmp/xcXOILIHd.s
+1654 cinit CODE >2319:/tmp/xcXOILIHd.s
+1656 cinit CODE >2320:/tmp/xcXOILIHd.s
+1658 cinit CODE >2321:/tmp/xcXOILIHd.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -442,19 +442,19 @@ __size_of_lcdInit 0 0 ABS 0 - dist/default/production/ProjetoFinalFornoEletrico.
 __size_of_lcd_str 0 0 ABS 0 - dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 lcdCommand@old_D 7 0 COMRAM 1 cstackCOMRAM dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production/ProjetoFinalFornoEletrico.X.production.o
-__mediumconst 0 0 MEDIUMCONST 0 mediumconst /tmp/xcXlDhdEo.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst /tmp/xcXMnlPAC.o
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 __end_of_atraso_ms 150E 0 CODE 0 text21 dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 __size_of_atraso_ms 0 0 ABS 0 - dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 _setTemperature 11EE 0 CODE 0 text1 dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 __Lsmallconst 600 0 SMALLCONST 0 smallconst dist/default/production/ProjetoFinalFornoEletrico.X.production.o
-___sp 0 0 STACK 2 stack /tmp/xcXlDhdEo.o
+___sp 0 0 STACK 2 stack /tmp/xcXMnlPAC.o
 _itoa 1056 0 CODE 0 text3 dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 _main 646 0 CODE 0 text0 dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 _perc 4D 0 COMRAM 1 bssCOMRAM dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 _tmax 4C 0 COMRAM 1 bssCOMRAM dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 _tmin 4B 0 COMRAM 1 bssCOMRAM dist/default/production/ProjetoFinalFornoEletrico.X.production.o
-start 0 0 CODE 0 init /tmp/xcXlDhdEo.o
+start 0 0 CODE 0 init /tmp/xcXMnlPAC.o
 __size_of_itoa 0 0 ABS 0 - dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 __size_of_main 0 0 ABS 0 - dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 __size_of___lwdiv 0 0 ABS 0 - dist/default/production/ProjetoFinalFornoEletrico.X.production.o
@@ -470,11 +470,11 @@ __Hpowerup 0 0 CODE 0 powerup dist/default/production/ProjetoFinalFornoEletrico.
 lcdPosition@coluna 9 0 COMRAM 1 cstackCOMRAM dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 _kpDebounce EDC 0 CODE 0 text20 dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 _lcdPosition 15B2 0 CODE 0 text2 dist/default/production/ProjetoFinalFornoEletrico.X.production.o
-__accesstop 80 0 ABS 0 - /tmp/xcXlDhdEo.o
-intlevel0 0 0 CODE 0 text /tmp/xcXlDhdEo.o
-intlevel1 0 0 CODE 0 text /tmp/xcXlDhdEo.o
-intlevel2 0 0 CODE 0 text /tmp/xcXlDhdEo.o
-intlevel3 0 0 CODE 0 text /tmp/xcXlDhdEo.o
+__accesstop 80 0 ABS 0 - /tmp/xcXMnlPAC.o
+intlevel0 0 0 CODE 0 text /tmp/xcXMnlPAC.o
+intlevel1 0 0 CODE 0 text /tmp/xcXMnlPAC.o
+intlevel2 0 0 CODE 0 text /tmp/xcXMnlPAC.o
+intlevel3 0 0 CODE 0 text /tmp/xcXMnlPAC.o
 __LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 kpDebounce@old_D 6 0 COMRAM 1 cstackCOMRAM dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 kpDebounce@tempo 50 0 COMRAM 1 bssCOMRAM dist/default/production/ProjetoFinalFornoEletrico.X.production.o
@@ -497,8 +497,8 @@ __end_of_lcdData 1562 0 CODE 0 text11 dist/default/production/ProjetoFinalFornoE
 __end_of_lcdInit 1366 0 CODE 0 text12 dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 __end_of_lcd_str 15B2 0 CODE 0 text10 dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 ?_setTemperature 19 0 COMRAM 1 cstackCOMRAM dist/default/production/ProjetoFinalFornoEletrico.X.production.o
-___inthi_sp 0 0 STACK 2 stack /tmp/xcXlDhdEo.o
-___intlo_sp 0 0 STACK 2 stack /tmp/xcXlDhdEo.o
+___inthi_sp 0 0 STACK 2 stack /tmp/xcXMnlPAC.o
+___intlo_sp 0 0 STACK 2 stack /tmp/xcXMnlPAC.o
 __size_of_adc_amostra 0 0 ABS 0 - dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 __size_of_Delay40us 0 0 ABS 0 - dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 kpDebounce@valorAntigo 45 0 COMRAM 1 bssCOMRAM dist/default/production/ProjetoFinalFornoEletrico.X.production.o
@@ -539,7 +539,7 @@ __end_of_Delay2ms 162E 0 CODE 0 text16 dist/default/production/ProjetoFinalForno
 ___rparam_used 1 0 ABS 0 - dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 main@minutosCentena 3C 0 COMRAM 1 cstackCOMRAM dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 pinMode@pin 1 0 COMRAM 1 cstackCOMRAM dist/default/production/ProjetoFinalFornoEletrico.X.production.o
-isa$xinst 0 0 ABS 0 - /tmp/xcXlDhdEo.o
+isa$xinst 0 0 ABS 0 - /tmp/xcXMnlPAC.o
 pwmSet1@porcento 17 0 COMRAM 1 cstackCOMRAM dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 __size_of_pwmInit 0 0 ABS 0 - dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 __size_of_pwmSet1 0 0 ABS 0 - dist/default/production/ProjetoFinalFornoEletrico.X.production.o
@@ -571,7 +571,7 @@ ___lwdiv@counter 14 0 COMRAM 1 cstackCOMRAM dist/default/production/ProjetoFinal
 main@tempoRelogio 28 0 COMRAM 1 cstackCOMRAM dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 __Hbigram 0 0 ABS 0 bigram dist/default/production/ProjetoFinalFornoEletrico.X.production.o
-__smallconst 600 0 SMALLCONST 0 smallconst /tmp/xcXlDhdEo.o
+__smallconst 600 0 SMALLCONST 0 smallconst /tmp/xcXMnlPAC.o
 lcd_str@i D 0 COMRAM 1 cstackCOMRAM dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 __Hcomram 0 0 ABS 0 comram dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 __Hconfig 30000E 0 CONFIG 4 config dist/default/production/ProjetoFinalFornoEletrico.X.production.o
@@ -691,9 +691,9 @@ main@tmpi 32 0 COMRAM 1 cstackCOMRAM dist/default/production/ProjetoFinalFornoEl
 ___lwdiv@divisor 10 0 COMRAM 1 cstackCOMRAM dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 main@tecla 43 0 COMRAM 1 cstackCOMRAM dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 __Lfardata 0 0 FARRAM 0 fardata dist/default/production/ProjetoFinalFornoEletrico.X.production.o
-isa$std 1 0 ABS 0 - /tmp/xcXlDhdEo.o
-stackhi 5FF 0 ABS 0 - /tmp/xcXlDhdEo.o
-stacklo 80 0 ABS 0 - /tmp/xcXlDhdEo.o
+isa$std 1 0 ABS 0 - /tmp/xcXMnlPAC.o
+stackhi 5FF 0 ABS 0 - /tmp/xcXMnlPAC.o
+stacklo 80 0 ABS 0 - /tmp/xcXMnlPAC.o
 pinMode@type 3 0 COMRAM 1 cstackCOMRAM dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 __Lintcode 0 0 CODE 0 intcode dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 __Lintret 0 0 ABS 0 intret dist/default/production/ProjetoFinalFornoEletrico.X.production.o
@@ -745,7 +745,7 @@ __Ltext18 0 0 ABS 0 text18 dist/default/production/ProjetoFinalFornoEletrico.X.p
 __Ltext19 0 0 ABS 0 text19 dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 __Ltext20 0 0 ABS 0 text20 dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 __Ltext21 0 0 ABS 0 text21 dist/default/production/ProjetoFinalFornoEletrico.X.production.o
-__ramtop 600 0 RAM 0 ramtop /tmp/xcXlDhdEo.o
+__ramtop 600 0 RAM 0 ramtop /tmp/xcXMnlPAC.o
 __size_of_lcdPosition 0 0 ABS 0 - dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 __Lpowerup 0 0 CODE 0 powerup dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 __Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production/ProjetoFinalFornoEletrico.X.production.o

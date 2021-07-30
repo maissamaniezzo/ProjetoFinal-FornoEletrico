@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.32 build 20210201212658 
-                                                                                               Fri Jul 30 14:13:45 2021
+                                                                                               Fri Jul 30 14:29:46 2021
 
 Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1 
      1                           	processor	18F4520
@@ -643,7 +643,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
    628  0006CE  C001  F043         	movff	?_kpRead,main@tecla
    629  0006D2  C002  F044         	movff	?_kpRead+1,main@tecla+1
    630  0006D6                     
-   631                           ;main.c: 43:             if (((tecla) & (1<<(3)))) {
+   631                           ;main.c: 45:             if (((tecla) & (1<<(3)))) {
    632  0006D6  A643               	btfss	main@tecla^0,3,c
    633  0006D8  EF70  F003         	goto	u1521
    634  0006DC  EF72  F003         	goto	u1520
@@ -651,74 +651,74 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
    636  0006E0  EF3F  F003         	goto	l1902
    637  0006E4                     u1520:
    638  0006E4                     
-   639                           ;main.c: 44:                 lcdCommand(0x01);
+   639                           ;main.c: 46:                 lcdCommand(0x01);
    640  0006E4  0E01               	movlw	1
    641  0006E6  EC38  F009         	call	_lcdCommand
    642                           
-   643                           ;main.c: 45:                 while (!((tecla) & (1<<(0)))) {
+   643                           ;main.c: 49:                 while (!((tecla) & (1<<(0)))) {
    644  0006EA  EF0C  F004         	goto	l1970
    645  0006EE                     l1920:
    646                           
-   647                           ;main.c: 47:                     lcdPosition(0, 0);
+   647                           ;main.c: 52:                     lcdPosition(0, 0);
    648  0006EE  0E00               	movlw	0
    649  0006F0  6E09               	movwf	lcdPosition@coluna^0,c
    650  0006F2  0E00               	movlw	0
    651  0006F4  ECD9  F00A         	call	_lcdPosition
    652  0006F8                     
-   653                           ;main.c: 48:                     lcd_str("Temperatura:");
+   653                           ;main.c: 53:                     lcd_str("Temperatura:");
    654  0006F8  0E2B               	movlw	low STR_3
    655  0006FA  6E09               	movwf	lcd_str@str^0,c
    656  0006FC  0E06               	movlw	high STR_3
    657  0006FE  6E0A               	movwf	(lcd_str@str+1)^0,c
    658  000700  ECB1  F00A         	call	_lcd_str	;wreg free
    659  000704                     
-   660                           ;main.c: 49:                     temperatura = setTemperature();
+   660                           ;main.c: 54:                     temperatura = setTemperature();
    661  000704  ECF7  F008         	call	_setTemperature	;wreg free
    662  000708  C019  F03A         	movff	?_setTemperature,main@temperatura
    663  00070C  C01A  F03B         	movff	?_setTemperature+1,main@temperatura+1
    664  000710                     
-   665                           ;main.c: 52:                     lcdPosition(1, 0);
+   665                           ;main.c: 58:                     lcdPosition(1, 0);
    666  000710  0E00               	movlw	0
    667  000712  6E09               	movwf	lcdPosition@coluna^0,c
    668  000714  0E01               	movlw	1
    669  000716  ECD9  F00A         	call	_lcdPosition
    670  00071A                     
-   671                           ;main.c: 53:                     lcd_str("Tempo:");
+   671                           ;main.c: 59:                     lcd_str("Tempo:");
    672  00071A  0E38               	movlw	low STR_4
    673  00071C  6E09               	movwf	lcd_str@str^0,c
    674  00071E  0E06               	movlw	high STR_4
    675  000720  6E0A               	movwf	(lcd_str@str+1)^0,c
    676  000722  ECB1  F00A         	call	_lcd_str	;wreg free
    677  000726                     
-   678                           ;main.c: 54:                     lcdPosition(1, 6);
+   678                           ;main.c: 60:                     lcdPosition(1, 6);
    679  000726  0E06               	movlw	6
    680  000728  6E09               	movwf	lcdPosition@coluna^0,c
    681  00072A  0E01               	movlw	1
    682  00072C  ECD9  F00A         	call	_lcdPosition
    683  000730                     
-   684                           ;main.c: 55:                     lcdData((char)minutosCentena);
+   684                           ;main.c: 61:                     lcdData((char)minutosCentena);
    685  000730  503C               	movf	main@minutosCentena^0,w,c
    686  000732  EC87  F00A         	call	_lcdData
    687  000736                     
-   688                           ;main.c: 56:                     lcdData((char)minutosDezena);
+   688                           ;main.c: 62:                     lcdData((char)minutosDezena);
    689  000736  503D               	movf	main@minutosDezena^0,w,c
    690  000738  EC87  F00A         	call	_lcdData
    691  00073C                     
-   692                           ;main.c: 57:                     lcdData((char)minutosUnidade);
+   692                           ;main.c: 63:                     lcdData((char)minutosUnidade);
    693  00073C  503E               	movf	main@minutosUnidade^0,w,c
    694  00073E  EC87  F00A         	call	_lcdData
    695  000742                     
-   696                           ;main.c: 58:                     lcd_str("min");
+   696                           ;main.c: 64:                     lcd_str("min");
    697  000742  0E3F               	movlw	low STR_5
    698  000744  6E09               	movwf	lcd_str@str^0,c
    699  000746  0E06               	movlw	high STR_5
    700  000748  6E0A               	movwf	(lcd_str@str+1)^0,c
    701  00074A  ECB1  F00A         	call	_lcd_str	;wreg free
    702  00074E                     
-   703                           ;main.c: 61:                     kpDebounce();
+   703                           ;main.c: 66:                     kpDebounce();
    704  00074E  EC6E  F007         	call	_kpDebounce	;wreg free
    705  000752                     
-   706                           ;main.c: 62:                     if (kpRead() != tecla) {
+   706                           ;main.c: 67:                     if (kpRead() != tecla) {
    707  000752  EC38  F00B         	call	_kpRead	;wreg free
    708  000756  5043               	movf	main@tecla^0,w,c
    709  000758  1801               	xorwf	?_kpRead^0,w,c
@@ -732,12 +732,12 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
    717  00076A  EF0C  F004         	goto	l1970
    718  00076E                     u1530:
    719  00076E                     
-   720                           ;main.c: 63:                         tecla = kpRead();
+   720                           ;main.c: 68:                         tecla = kpRead();
    721  00076E  EC38  F00B         	call	_kpRead	;wreg free
    722  000772  C001  F043         	movff	?_kpRead,main@tecla
    723  000776  C002  F044         	movff	?_kpRead+1,main@tecla+1
    724  00077A                     
-   725                           ;main.c: 64:                         if (((tecla) & (1<<(1)))) {
+   725                           ;main.c: 69:                         if (((tecla) & (1<<(1)))) {
    726  00077A  A243               	btfss	main@tecla^0,1,c
    727  00077C  EFC2  F003         	goto	u1541
    728  000780  EFC4  F003         	goto	u1540
@@ -745,7 +745,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
    730  000784  EFD8  F003         	goto	l289
    731  000788                     u1540:
    732  000788                     
-   733                           ;main.c: 65:                             if (minutosCentena == 57) {
+   733                           ;main.c: 70:                             if (minutosCentena == 57) {
    734  000788  0E39               	movlw	57
    735  00078A  183C               	xorwf	main@minutosCentena^0,w,c
    736  00078C  A4D8               	btfss	status,2,c
@@ -755,18 +755,18 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
    740  000796  EFD1  F003         	goto	l1952
    741  00079A                     u1550:
    742  00079A                     
-   743                           ;main.c: 66:                                 minutosCentena = 48;
+   743                           ;main.c: 71:                                 minutosCentena = 48;
    744  00079A  0E30               	movlw	48
    745  00079C  6E3C               	movwf	main@minutosCentena^0,c
    746                           
-   747                           ;main.c: 67:                             } else {
+   747                           ;main.c: 72:                             } else {
    748  00079E  EF0C  F004         	goto	l1970
    749  0007A2                     l1952:
    750                           
-   751                           ;main.c: 68:                                 minutosCentena += 1;
+   751                           ;main.c: 73:                                 minutosCentena += 1;
    752  0007A2  2A3C               	incf	main@minutosCentena^0,f,c
    753  0007A4                     
-   754                           ;main.c: 69:                                 tempoTotal += 100;
+   754                           ;main.c: 74:                                 tempoTotal += 100;
    755  0007A4  0E64               	movlw	100
    756  0007A6  2641               	addwf	main@tempoTotal^0,f,c
    757  0007A8  0E00               	movlw	0
@@ -780,7 +780,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
    765  0007BA  EFF3  F003         	goto	l293
    766  0007BE                     u1560:
    767  0007BE                     
-   768                           ;main.c: 72:                             if (minutosDezena == 57) {
+   768                           ;main.c: 77:                             if (minutosDezena == 57) {
    769  0007BE  0E39               	movlw	57
    770  0007C0  183D               	xorwf	main@minutosDezena^0,w,c
    771  0007C2  A4D8               	btfss	status,2,c
@@ -790,18 +790,18 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
    775  0007CC  EFEC  F003         	goto	l1960
    776  0007D0                     u1570:
    777  0007D0                     
-   778                           ;main.c: 73:                                 minutosDezena = 48;
+   778                           ;main.c: 78:                                 minutosDezena = 48;
    779  0007D0  0E30               	movlw	48
    780  0007D2  6E3D               	movwf	main@minutosDezena^0,c
    781                           
-   782                           ;main.c: 74:                             } else {
+   782                           ;main.c: 79:                             } else {
    783  0007D4  EF0C  F004         	goto	l1970
    784  0007D8                     l1960:
    785                           
-   786                           ;main.c: 75:                                 minutosDezena += 1;
+   786                           ;main.c: 80:                                 minutosDezena += 1;
    787  0007D8  2A3D               	incf	main@minutosDezena^0,f,c
    788  0007DA                     
-   789                           ;main.c: 76:                                 tempoTotal += 10;
+   789                           ;main.c: 81:                                 tempoTotal += 10;
    790  0007DA  0E0A               	movlw	10
    791  0007DC  2641               	addwf	main@tempoTotal^0,f,c
    792  0007DE  0E00               	movlw	0
@@ -815,7 +815,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
    800  0007F0  EF0C  F004         	goto	l288
    801  0007F4                     u1580:
    802  0007F4                     
-   803                           ;main.c: 79:                             if (minutosUnidade == 57) {
+   803                           ;main.c: 84:                             if (minutosUnidade == 57) {
    804  0007F4  0E39               	movlw	57
    805  0007F6  183E               	xorwf	main@minutosUnidade^0,w,c
    806  0007F8  A4D8               	btfss	status,2,c
@@ -825,25 +825,25 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
    810  000802  EF07  F004         	goto	l1968
    811  000806                     u1590:
    812  000806                     
-   813                           ;main.c: 80:                                 minutosUnidade = 48;
+   813                           ;main.c: 85:                                 minutosUnidade = 48;
    814  000806  0E30               	movlw	48
    815  000808  6E3E               	movwf	main@minutosUnidade^0,c
    816                           
-   817                           ;main.c: 81:                             } else {
+   817                           ;main.c: 86:                             } else {
    818  00080A  EF0C  F004         	goto	l1970
    819  00080E                     l1968:
    820                           
-   821                           ;main.c: 82:                                 minutosUnidade += 1;
+   821                           ;main.c: 87:                                 minutosUnidade += 1;
    822  00080E  2A3E               	incf	main@minutosUnidade^0,f,c
    823                           
-   824                           ;main.c: 83:                                 tempoTotal += 1;
+   824                           ;main.c: 88:                                 tempoTotal += 1;
    825  000810  4A41               	infsnz	main@tempoTotal^0,f,c
    826  000812  2A42               	incf	(main@tempoTotal+1)^0,f,c
    827  000814  EF0C  F004         	goto	l1970
    828  000818                     l288:
    829  000818                     l1970:
    830                           
-   831                           ;main.c: 45:                 while (!((tecla) & (1<<(0)))) {
+   831                           ;main.c: 49:                 while (!((tecla) & (1<<(0)))) {
    832  000818  A043               	btfss	main@tecla^0,0,c
    833  00081A  EF11  F004         	goto	u1601
    834  00081E  EF13  F004         	goto	u1600
@@ -851,7 +851,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
    836  000822  EF77  F003         	goto	l1920
    837  000826                     u1600:
    838  000826                     
-   839                           ;main.c: 89:                 if (((tecla) & (1<<(0)))) {
+   839                           ;main.c: 96:                 if (((tecla) & (1<<(0)))) {
    840  000826  A043               	btfss	main@tecla^0,0,c
    841  000828  EF18  F004         	goto	u1611
    842  00082C  EF1A  F004         	goto	u1610
@@ -859,11 +859,11 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
    844  000830  EF12  F005         	goto	l2042
    845  000834                     u1610:
    846  000834                     
-   847                           ;main.c: 90:                     lcdCommand(0x01);
+   847                           ;main.c: 97:                     lcdCommand(0x01);
    848  000834  0E01               	movlw	1
    849  000836  EC38  F009         	call	_lcdCommand
    850  00083A                     
-   851                           ;main.c: 92:                     temperaturaMaxima = temperatura + 10;
+   851                           ;main.c: 100:                     temperaturaMaxima = temperatura + 10;
    852  00083A  0E0A               	movlw	10
    853  00083C  243A               	addwf	main@temperatura^0,w,c
    854  00083E  6E2E               	movwf	main@temperaturaMaxima^0,c
@@ -871,7 +871,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
    856  000842  203B               	addwfc	(main@temperatura+1)^0,w,c
    857  000844  6E2F               	movwf	(main@temperaturaMaxima+1)^0,c
    858  000846                     
-   859                           ;main.c: 93:                     temperaturaMinima = temperatura - 10;
+   859                           ;main.c: 101:                     temperaturaMinima = temperatura - 10;
    860  000846  0EF6               	movlw	246
    861  000848  243A               	addwf	main@temperatura^0,w,c
    862  00084A  6E30               	movwf	main@temperaturaMinima^0,c
@@ -879,44 +879,44 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
    864  00084E  203B               	addwfc	(main@temperatura+1)^0,w,c
    865  000850  6E31               	movwf	(main@temperaturaMinima+1)^0,c
    866                           
-   867                           ;main.c: 96:                     pwmInit();
+   867                           ;main.c: 104:                     pwmInit();
    868  000852  EC2E  F00B         	call	_pwmInit	;wreg free
    869  000856                     
-   870                           ;main.c: 97:                     pwmSet1(30);
+   870                           ;main.c: 105:                     pwmSet1(30);
    871  000856  0E1E               	movlw	30
    872  000858  ECED  F009         	call	_pwmSet1
    873  00085C                     
-   874                           ;main.c: 99:                     PORTB = 0xFF;
+   874                           ;main.c: 108:                     PORTB = 0xFF;
    875  00085C  6881               	setf	129,c	;volatile
    876                           
-   877                           ;main.c: 101:                     while ((!((tecla) & (1<<(4))) && (tempoTotal > 0))) {
+   877                           ;main.c: 111:                     while ((!((tecla) & (1<<(4))) && (tempoTotal > 0))) {
    878  00085E  EF02  F005         	goto	l2038
    879  000862                     l1982:
    880                           
-   881                           ;main.c: 102:                         lcdCommand(0x01);
+   881                           ;main.c: 112:                         lcdCommand(0x01);
    882  000862  0E01               	movlw	1
    883  000864  EC38  F009         	call	_lcdCommand
    884                           
-   885                           ;main.c: 104:                         lcdPosition(0, 2);
+   885                           ;main.c: 114:                         lcdPosition(0, 2);
    886  000868  0E02               	movlw	2
    887  00086A  6E09               	movwf	lcdPosition@coluna^0,c
    888  00086C  0E00               	movlw	0
    889  00086E  ECD9  F00A         	call	_lcdPosition
    890  000872                     
-   891                           ;main.c: 105:                         lcd_str("Funcionando!");
+   891                           ;main.c: 115:                         lcd_str("Funcionando!");
    892  000872  0E1E               	movlw	low STR_6
    893  000874  6E09               	movwf	lcd_str@str^0,c
    894  000876  0E06               	movlw	high STR_6
    895  000878  6E0A               	movwf	(lcd_str@str+1)^0,c
    896  00087A  ECB1  F00A         	call	_lcd_str	;wreg free
    897  00087E                     
-   898                           ;main.c: 107:                         lcdPosition(1, 9);
+   898                           ;main.c: 118:                         lcdPosition(1, 9);
    899  00087E  0E09               	movlw	9
    900  000880  6E09               	movwf	lcdPosition@coluna^0,c
    901  000882  0E01               	movlw	1
    902  000884  ECD9  F00A         	call	_lcdPosition
    903  000888                     
-   904                           ;main.c: 108:                         itoa(tempoTotal, tempoRelogio);
+   904                           ;main.c: 119:                         itoa(tempoTotal, tempoRelogio);
    905  000888  C041  F015         	movff	main@tempoTotal,itoa@val
    906  00088C  C042  F016         	movff	main@tempoTotal+1,itoa@val+1
    907  000890  0E28               	movlw	low main@tempoRelogio
@@ -925,31 +925,31 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
    910  000896  6E18               	movwf	(itoa@str+1)^0,c
    911  000898  EC2B  F008         	call	_itoa	;wreg free
    912  00089C                     
-   913                           ;main.c: 109:                         lcdData(tempoRelogio[2]);
+   913                           ;main.c: 120:                         lcdData(tempoRelogio[2]);
    914  00089C  502A               	movf	(main@tempoRelogio+2)^0,w,c
    915  00089E  EC87  F00A         	call	_lcdData
    916  0008A2                     
-   917                           ;main.c: 110:                         lcdData(tempoRelogio[3]);
+   917                           ;main.c: 121:                         lcdData(tempoRelogio[3]);
    918  0008A2  502B               	movf	(main@tempoRelogio+3)^0,w,c
    919  0008A4  EC87  F00A         	call	_lcdData
    920  0008A8                     
-   921                           ;main.c: 111:                         lcdData(tempoRelogio[4]);
+   921                           ;main.c: 122:                         lcdData(tempoRelogio[4]);
    922  0008A8  502C               	movf	(main@tempoRelogio+4)^0,w,c
    923  0008AA  EC87  F00A         	call	_lcdData
    924  0008AE                     
-   925                           ;main.c: 112:                         lcd_str("min");
+   925                           ;main.c: 123:                         lcd_str("min");
    926  0008AE  0E3F               	movlw	low STR_5
    927  0008B0  6E09               	movwf	lcd_str@str^0,c
    928  0008B2  0E06               	movlw	high STR_5
    929  0008B4  6E0A               	movwf	(lcd_str@str+1)^0,c
    930  0008B6  ECB1  F00A         	call	_lcd_str	;wreg free
    931  0008BA                     
-   932                           ;main.c: 113:                         tempoTotal--;
+   932                           ;main.c: 124:                         tempoTotal--;
    933  0008BA  0641               	decf	main@tempoTotal^0,f,c
    934  0008BC  A0D8               	btfss	status,0,c
    935  0008BE  0642               	decf	(main@tempoTotal+1)^0,f,c
    936  0008C0                     
-   937                           ;main.c: 116:                         tmpi = (adc_amostra(1)*10) / 2;
+   937                           ;main.c: 127:                         tmpi = (adc_amostra(1)*10) / 2;
    938  0008C0  0E01               	movlw	1
    939  0008C2  ECAF  F008         	call	_adc_amostra
    940  0008C6  C001  F008         	movff	?_adc_amostra,___wmul@multiplier
@@ -966,7 +966,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
    951  0008E2  6E32               	movwf	main@tmpi^0,c
    952  0008E4  C026  F033         	movff	??_main,main@tmpi+1
    953  0008E8                     
-   954                           ;main.c: 117:                         temperaturaLcd = ((tmpi - 280) * 222 / 46) + 280;
+   954                           ;main.c: 128:                         temperaturaLcd = ((tmpi - 280) * 222 / 46) + 280;
    955  0008E8  0EE8               	movlw	232
    956  0008EA  2432               	addwf	main@tmpi^0,w,c
    957  0008EC  6E08               	movwf	___wmul@multiplier^0,c
@@ -992,13 +992,13 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
    977  00091C  200F               	addwfc	(?___lwdiv+1)^0,w,c
    978  00091E  6E40               	movwf	(main@temperaturaLcd+1)^0,c
    979  000920                     
-   980                           ;main.c: 120:                         lcdPosition(1, 1);
+   980                           ;main.c: 131:                         lcdPosition(1, 1);
    981  000920  0E01               	movlw	1
    982  000922  6E09               	movwf	lcdPosition@coluna^0,c
    983  000924  0E01               	movlw	1
    984  000926  ECD9  F00A         	call	_lcdPosition
    985  00092A                     
-   986                           ;main.c: 121:                         itoa(temperaturaLcd, str);
+   986                           ;main.c: 132:                         itoa(temperaturaLcd, str);
    987  00092A  C03F  F015         	movff	main@temperaturaLcd,itoa@val
    988  00092E  C040  F016         	movff	main@temperaturaLcd+1,itoa@val+1
    989  000932  0E34               	movlw	low main@str
@@ -1007,41 +1007,41 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
    992  000938  6E18               	movwf	(itoa@str+1)^0,c
    993  00093A  EC2B  F008         	call	_itoa	;wreg free
    994  00093E                     
-   995                           ;main.c: 122:                         lcdData(str[1]);
+   995                           ;main.c: 133:                         lcdData(str[1]);
    996  00093E  5035               	movf	(main@str+1)^0,w,c
    997  000940  EC87  F00A         	call	_lcdData
    998  000944                     
-   999                           ;main.c: 123:                         lcdData(str[2]);
+   999                           ;main.c: 134:                         lcdData(str[2]);
   1000  000944  5036               	movf	(main@str+2)^0,w,c
   1001  000946  EC87  F00A         	call	_lcdData
   1002  00094A                     
-  1003                           ;main.c: 124:                         lcdData(str[3]);
+  1003                           ;main.c: 135:                         lcdData(str[3]);
   1004  00094A  5037               	movf	(main@str+3)^0,w,c
   1005  00094C  EC87  F00A         	call	_lcdData
   1006  000950                     
-  1007                           ;main.c: 125:                         lcdData(',');
+  1007                           ;main.c: 136:                         lcdData(',');
   1008  000950  0E2C               	movlw	44
   1009  000952  EC87  F00A         	call	_lcdData
   1010  000956                     
-  1011                           ;main.c: 126:                         lcdData(str[4]);
+  1011                           ;main.c: 137:                         lcdData(str[4]);
   1012  000956  5038               	movf	(main@str+4)^0,w,c
   1013  000958  EC87  F00A         	call	_lcdData
   1014  00095C                     
-  1015                           ;main.c: 127:                         lcd_str("C");
+  1015                           ;main.c: 138:                         lcd_str("C");
   1016  00095C  0E43               	movlw	low STR_8
   1017  00095E  6E09               	movwf	lcd_str@str^0,c
   1018  000960  0E06               	movlw	high STR_8
   1019  000962  6E0A               	movwf	(lcd_str@str+1)^0,c
   1020  000964  ECB1  F00A         	call	_lcd_str	;wreg free
   1021  000968                     
-  1022                           ;main.c: 129:                         atraso_ms(1000);
+  1022                           ;main.c: 140:                         atraso_ms(1000);
   1023  000968  0E03               	movlw	3
   1024  00096A  6E02               	movwf	(atraso_ms@t+1)^0,c
   1025  00096C  0EE8               	movlw	232
   1026  00096E  6E01               	movwf	atraso_ms@t^0,c
   1027  000970  EC55  F00A         	call	_atraso_ms	;wreg free
   1028  000974                     
-  1029                           ;main.c: 132:                         if (temperaturaLcd > temperaturaMaxima * 10) {
+  1029                           ;main.c: 143:                         if (temperaturaLcd > temperaturaMaxima * 10) {
   1030  000974  C02E  F008         	movff	main@temperaturaMaxima,___wmul@multiplier
   1031  000978  C02F  F009         	movff	main@temperaturaMaxima+1,___wmul@multiplier+1
   1032  00097C  0E00               	movlw	0
@@ -1060,18 +1060,18 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1045  00099A  EFD6  F004         	goto	l2028
   1046  00099E                     u1620:
   1047  00099E                     
-  1048                           ;main.c: 133:                             atraso_ms(100);
+  1048                           ;main.c: 144:                             atraso_ms(100);
   1049  00099E  0E00               	movlw	0
   1050  0009A0  6E02               	movwf	(atraso_ms@t+1)^0,c
   1051  0009A2  0E64               	movlw	100
   1052  0009A4  6E01               	movwf	atraso_ms@t^0,c
   1053  0009A6  EC55  F00A         	call	_atraso_ms	;wreg free
   1054  0009AA                     
-  1055                           ;main.c: 134:                             PORTCbits.RC5 = 0;
+  1055                           ;main.c: 145:                             PORTCbits.RC5 = 0;
   1056  0009AA  9A82               	bcf	130,5,c	;volatile
   1057  0009AC                     l2028:
   1058                           
-  1059                           ;main.c: 137:                         if (temperaturaLcd < temperaturaMinima * 10) {
+  1059                           ;main.c: 147:                         if (temperaturaLcd < temperaturaMinima * 10) {
   1060  0009AC  C030  F008         	movff	main@temperaturaMinima,___wmul@multiplier
   1061  0009B0  C031  F009         	movff	main@temperaturaMinima+1,___wmul@multiplier+1
   1062  0009B4  0E00               	movlw	0
@@ -1090,14 +1090,14 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1075  0009D2  EFEC  F004         	goto	l2032
   1076  0009D6                     u1630:
   1077  0009D6                     
-  1078                           ;main.c: 138:                             PORTCbits.RC5 = 1;
+  1078                           ;main.c: 148:                             PORTCbits.RC5 = 1;
   1079  0009D6  8A82               	bsf	130,5,c	;volatile
   1080  0009D8                     l2032:
   1081                           
-  1082                           ;main.c: 141:                         kpDebounce();
+  1082                           ;main.c: 152:                         kpDebounce();
   1083  0009D8  EC6E  F007         	call	_kpDebounce	;wreg free
   1084  0009DC                     
-  1085                           ;main.c: 142:                         if (kpRead() != tecla) {
+  1085                           ;main.c: 153:                         if (kpRead() != tecla) {
   1086  0009DC  EC38  F00B         	call	_kpRead	;wreg free
   1087  0009E0  5043               	movf	main@tecla^0,w,c
   1088  0009E2  1801               	xorwf	?_kpRead^0,w,c
@@ -1111,13 +1111,13 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1096  0009F4  EF02  F005         	goto	l2038
   1097  0009F8                     u1640:
   1098  0009F8                     
-  1099                           ;main.c: 143:                             tecla = kpRead();
+  1099                           ;main.c: 154:                             tecla = kpRead();
   1100  0009F8  EC38  F00B         	call	_kpRead	;wreg free
   1101  0009FC  C001  F043         	movff	?_kpRead,main@tecla
   1102  000A00  C002  F044         	movff	?_kpRead+1,main@tecla+1
   1103  000A04                     l2038:
   1104                           
-  1105                           ;main.c: 101:                     while ((!((tecla) & (1<<(4))) && (tempoTotal > 0))) {
+  1105                           ;main.c: 111:                     while ((!((tecla) & (1<<(4))) && (tempoTotal > 0))) {
   1106  000A04  B843               	btfsc	main@tecla^0,4,c
   1107  000A06  EF07  F005         	goto	u1651
   1108  000A0A  EF09  F005         	goto	u1650
@@ -1134,21 +1134,21 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1119  000A24                     u1660:
   1120  000A24                     l2042:
   1121                           
-  1122                           ;main.c: 147:                 PORTB = 0x00;
-  1123  000A24  0E00               	movlw	0
-  1124  000A26  6E81               	movwf	129,c	;volatile
-  1125  000A28                     
-  1126                           ;main.c: 148:                 lcdCommand(0x01);
-  1127  000A28  0E01               	movlw	1
-  1128  000A2A  EC38  F009         	call	_lcdCommand
+  1122                           ;main.c: 159:                 lcdCommand(0x01);
+  1123  000A24  0E01               	movlw	1
+  1124  000A26  EC38  F009         	call	_lcdCommand
+  1125  000A2A                     
+  1126                           ;main.c: 160:                 PORTB = 0x00;
+  1127  000A2A  0E00               	movlw	0
+  1128  000A2C  6E81               	movwf	129,c	;volatile
   1129  000A2E                     
-  1130                           ;main.c: 149:                 PORTCbits.RC5 = 0;
+  1130                           ;main.c: 161:                 PORTCbits.RC5 = 0;
   1131  000A2E  9A82               	bcf	130,5,c	;volatile
   1132  000A30                     
-  1133                           ;main.c: 150:                 TRISCbits.TRISC0 = 0;
+  1133                           ;main.c: 162:                 TRISCbits.TRISC0 = 0;
   1134  000A30  9094               	bcf	148,0,c	;volatile
   1135  000A32                     
-  1136                           ;main.c: 151:                 pwmSet1(0);
+  1136                           ;main.c: 163:                 pwmSet1(0);
   1137  000A32  0E00               	movlw	0
   1138  000A34  ECED  F009         	call	_pwmSet1
   1139  000A38  EF3F  F003         	goto	l1902
@@ -4151,7 +4151,7 @@ CODE                 0      0       0       0        0.0%
 
 
 Microchip Technology PIC18 Macro Assembler V2.32 build 20210201212658 
-Symbol Table                                                                                   Fri Jul 30 14:13:45 2021
+Symbol Table                                                                                   Fri Jul 30 14:29:46 2021
 
                         _i 004F                         l42 0EDA                         l76 0C8C  
                        l89 1678                         u10 1644                         u11 1640  
@@ -4190,7 +4190,7 @@ Symbol Table                                                                    
                      l2050 0A32                       l2034 09DC                       l2026 09AA  
                      l2018 095C                       l2042 0A24                       l1260 100A  
                      l1252 0FE6                       l1236 0F32                       l1228 0EE8  
-                     l2044 0A28                       l2036 09F8                       l2028 09AC  
+                     l2044 0A2A                       l2036 09F8                       l2028 09AC  
                      l1270 1050                       l1262 1022                       l1254 0FE8  
                      l1246 0F56                       l1238 0F36                       l2046 0A2E  
                      l2038 0A04                       l1264 1028                       l1256 0FF8  

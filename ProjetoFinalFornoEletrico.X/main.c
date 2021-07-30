@@ -40,15 +40,21 @@ void main(void) {
         kpDebounce();
         if (kpRead() != tecla) {
             tecla = kpRead();
-            if (bitTst(tecla, 3)) {  // Referente a tecla de número 1 -> aumenta horas 
+            
+            // Ao apertar tecla 1 -> sai da tela de entrada e entra nas configurações de temperatura e tempo
+            if (bitTst(tecla, 3)) {   
                 lcdCommand(0x01);
+                
+                // Enquanto tecla * não for pressionada (tecla * -> inicia o preparo da comida)
                 while (!bitTst(tecla, 0)) {
+                    
                     // Impressão e coleta de temperatura
                     lcdPosition(0, 0);
                     lcd_str("Temperatura:");
                     temperatura = setTemperature();
                     
-                    // Impressão e coleta de tempo
+                    // Impressão e coleta de tempo 
+                    // tecla 7 -> aumenta 100 min; tecla 8 -> aumenta 10 min; tecla 9 -> aumenta 1 min
                     lcdPosition(1, 0);
                     lcd_str("Tempo:");
                     lcdPosition(1, 6);
@@ -57,7 +63,6 @@ void main(void) {
                     lcdData((char)minutosUnidade);
                     lcd_str("min");
                     
-                    // Muda valor do tempo pelos botões 7, 8, 9 e reconhece que * foi apertado
                     kpDebounce();
                     if (kpRead() != tecla) {
                         tecla = kpRead();
@@ -84,26 +89,32 @@ void main(void) {
                             }
                         }
                     }
+                    
                 }
                 
+                // Funcionamento do forno
                 if (bitTst(tecla, 0)) {
                     lcdCommand(0x01);
                     
+                    // Define a partir da temperatura escolhida o intervalo que a temperatura se manterá
                     temperaturaMaxima = temperatura + 10;
                     temperaturaMinima = temperatura - 10;
                     
-                    // Configura potência do cooler (simular vida real)
+                    // Configura potência do cooler em 30% (simular vida real)
                     pwmInit();
                     pwmSet1(30);
                     
+                    // LED simbolizando que forno está ligado
                     PORTB = 0xFF;
                     
-                    while ((!bitTst(tecla, 4) && (tempoTotal > 0))) { // Referente a tecla *
+                    // Enquanto o tempo não acaba, atualiza temperatura atual e tempo restante
+                    while ((!bitTst(tecla, 4) && (tempoTotal > 0))) {
                         lcdCommand(0x01);
                         
                         lcdPosition(0, 2);
                         lcd_str("Funcionando!");
 
+                        // Imprime tempo
                         lcdPosition(1, 9);
                         itoa(tempoTotal, tempoRelogio);
                         lcdData(tempoRelogio[2]);
@@ -116,7 +127,7 @@ void main(void) {
                         tmpi = (adc_amostra(1)*10) / 2;
                         temperaturaLcd = ((tmpi - 280) * 222 / 46) + 280;
                         
-                        // Impressão da temperatura na tela
+                        // Imprime temperatura
                         lcdPosition(1, 1);
                         itoa(temperaturaLcd, str);
                         lcdData(str[1]);
@@ -128,28 +139,30 @@ void main(void) {
                         
                         atraso_ms(1000);
                         
-
+                        // Liga heater quando atingir a temperatura mínima e desliga quando atinge temperatura máxima
                         if (temperaturaLcd > temperaturaMaxima * 10) {
                             atraso_ms(100);
-                            PORTCbits.RC5 = 0; // Desliga heater
+                            PORTCbits.RC5 = 0;
                         }
-
                         if (temperaturaLcd < temperaturaMinima * 10) {
-                            PORTCbits.RC5 = 1; // Liga o heater
+                            PORTCbits.RC5 = 1;
                         }
                         
+                        // Leitura da tecla (para reconhecer tecla 0)
                         kpDebounce();
                         if (kpRead() != tecla) {
                             tecla = kpRead();
                         } 
                     }
                 }
-                PORTB = 0x00;
+                
                 lcdCommand(0x01);
-                PORTCbits.RC5 = 0;
-                TRISCbits.TRISC0 = 0;
+                PORTB = 0x00;  // Desliga LEDs
+                PORTCbits.RC5 = 0;  // Desliga heater
+                TRISCbits.TRISC0 = 0;  // Desliga cooler
                 pwmSet1(0);
             }
+            
         }
     }
 }

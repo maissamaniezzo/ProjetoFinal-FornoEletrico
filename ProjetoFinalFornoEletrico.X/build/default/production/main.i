@@ -4471,13 +4471,19 @@ void main(void) {
         kpDebounce();
         if (kpRead() != tecla) {
             tecla = kpRead();
+
+
             if (((tecla) & (1<<(3)))) {
                 lcdCommand(0x01);
+
+
                 while (!((tecla) & (1<<(0)))) {
+
 
                     lcdPosition(0, 0);
                     lcd_str("Temperatura:");
                     temperatura = setTemperature();
+
 
 
                     lcdPosition(1, 0);
@@ -4487,7 +4493,6 @@ void main(void) {
                     lcdData((char)minutosDezena);
                     lcdData((char)minutosUnidade);
                     lcd_str("min");
-
 
                     kpDebounce();
                     if (kpRead() != tecla) {
@@ -4515,10 +4520,13 @@ void main(void) {
                             }
                         }
                     }
+
                 }
+
 
                 if (((tecla) & (1<<(0)))) {
                     lcdCommand(0x01);
+
 
                     temperaturaMaxima = temperatura + 10;
                     temperaturaMinima = temperatura - 10;
@@ -4527,13 +4535,16 @@ void main(void) {
                     pwmInit();
                     pwmSet1(30);
 
+
                     PORTB = 0xFF;
+
 
                     while ((!((tecla) & (1<<(4))) && (tempoTotal > 0))) {
                         lcdCommand(0x01);
 
                         lcdPosition(0, 2);
                         lcd_str("Funcionando!");
+
 
                         lcdPosition(1, 9);
                         itoa(tempoTotal, tempoRelogio);
@@ -4564,10 +4575,10 @@ void main(void) {
                             atraso_ms(100);
                             PORTCbits.RC5 = 0;
                         }
-
                         if (temperaturaLcd < temperaturaMinima * 10) {
                             PORTCbits.RC5 = 1;
                         }
+
 
                         kpDebounce();
                         if (kpRead() != tecla) {
@@ -4575,12 +4586,14 @@ void main(void) {
                         }
                     }
                 }
-                PORTB = 0x00;
+
                 lcdCommand(0x01);
+                PORTB = 0x00;
                 PORTCbits.RC5 = 0;
                 TRISCbits.TRISC0 = 0;
                 pwmSet1(0);
             }
+
         }
     }
 }
