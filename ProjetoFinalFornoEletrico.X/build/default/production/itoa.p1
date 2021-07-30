@@ -1,0 +1,37 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"26 itoa.c
+[; ;itoa.c: 26: void itoa(unsigned int val, char* str )
+[v _itoa `(v ~T0 @X0 1 ef2`ui`*uc ]
+"27
+[; ;itoa.c: 27: {
+{
+[e :U _itoa ]
+"26
+[; ;itoa.c: 26: void itoa(unsigned int val, char* str )
+[v _val `ui ~T0 @X0 1 r1 ]
+[v _str `*uc ~T0 @X0 1 r2 ]
+"27
+[; ;itoa.c: 27: {
+[f ]
+"28
+[; ;itoa.c: 28:   str[0]=(val/10000)+0x30;
+[e = *U + _str * -> -> 0 `i `x -> -> # *U _str `i `x -> + / _val -> -> 10000 `i `ui -> -> 48 `i `ui `uc ]
+"29
+[; ;itoa.c: 29:   str[1]=((val%10000)/1000)+0x30;
+[e = *U + _str * -> -> 1 `i `x -> -> # *U _str `i `x -> + / % _val -> -> 10000 `i `ui -> -> 1000 `i `ui -> -> 48 `i `ui `uc ]
+"30
+[; ;itoa.c: 30:   str[2]=((val%1000)/100)+0x30;
+[e = *U + _str * -> -> 2 `i `x -> -> # *U _str `i `x -> + / % _val -> -> 1000 `i `ui -> -> 100 `i `ui -> -> 48 `i `ui `uc ]
+"31
+[; ;itoa.c: 31:   str[3]=((val%100)/10)+0x30;
+[e = *U + _str * -> -> 3 `i `x -> -> # *U _str `i `x -> + / % _val -> -> 100 `i `ui -> -> 10 `i `ui -> -> 48 `i `ui `uc ]
+"32
+[; ;itoa.c: 32:   str[4]=(val%10)+0x30;
+[e = *U + _str * -> -> 4 `i `x -> -> # *U _str `i `x -> + % _val -> -> 10 `i `ui -> -> 48 `i `ui `uc ]
+"33
+[; ;itoa.c: 33:   str[5]=0;
+[e = *U + _str * -> -> 5 `i `x -> -> # *U _str `i `x -> -> 0 `i `uc ]
+"34
+[; ;itoa.c: 34: }
+[e :UE 1 ]
+}

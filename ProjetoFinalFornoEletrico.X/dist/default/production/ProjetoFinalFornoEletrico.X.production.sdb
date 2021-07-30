@@ -1,0 +1,475 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4520 ]
+[d frameptr 4065 ]
+"58 /home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/lcd.c
+[e E2364 pin_label `uc
+PIN_A0 0
+PIN_A1 1
+PIN_A2 2
+PIN_A3 3
+PIN_A4 4
+PIN_A5 5
+PIN_A6 6
+PIN_A7 7
+PIN_B0 8
+PIN_B1 9
+PIN_B2 10
+PIN_B3 11
+PIN_B4 12
+PIN_B5 13
+PIN_B6 14
+PIN_B7 15
+PIN_C0 16
+PIN_C1 17
+PIN_C2 18
+PIN_C3 19
+PIN_C4 20
+PIN_C5 21
+PIN_C6 22
+PIN_C7 23
+PIN_D0 24
+PIN_D1 25
+PIN_D2 26
+PIN_D3 27
+PIN_D4 28
+PIN_D5 29
+PIN_D6 30
+PIN_D7 31
+PIN_E0 32
+PIN_E1 33
+PIN_E2 34
+PIN_E3 35
+PIN_E4 36
+PIN_E5 37
+PIN_E6 38
+PIN_E7 39
+]
+"7 /home/maissa/microchip/xc8/v2.32/pic/sources/c99/common/aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"4 /home/maissa/microchip/xc8/v2.32/pic/sources/c99/common/fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 /home/maissa/microchip/xc8/v2.32/pic/sources/c99/common/float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 /home/maissa/microchip/xc8/v2.32/pic/sources/c99/common/ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 /home/maissa/microchip/xc8/v2.32/pic/sources/c99/common/ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 /home/maissa/microchip/xc8/v2.32/pic/sources/c99/common/ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 /home/maissa/microchip/xc8/v2.32/pic/sources/c99/common/ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"7 /home/maissa/microchip/xc8/v2.32/pic/sources/c99/common/lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"7 /home/maissa/microchip/xc8/v2.32/pic/sources/c99/common/lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"10 /home/maissa/microchip/xc8/v2.32/pic/sources/c99/common/sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 /home/maissa/microchip/xc8/v2.32/pic/sources/c99/common/sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 /home/maissa/microchip/xc8/v2.32/pic/sources/c99/common/sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 /home/maissa/microchip/xc8/v2.32/pic/sources/c99/common/Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 /home/maissa/microchip/xc8/v2.32/pic/sources/c99/common/Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 /home/maissa/microchip/xc8/v2.32/pic/sources/c99/common/Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"30 /home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/adc.c
+[v _adc_init adc_init `(v  1 e 1 0 ]
+"44
+[v _adc_amostra adc_amostra `(ui  1 e 2 0 ]
+"3 /home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/atraso.c
+[v _atraso_ms atraso_ms `(v  1 e 1 0 ]
+"14 /home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/io.c
+[v _digitalWrite digitalWrite `(v  1 e 1 0 ]
+"54
+[v _pinMode pinMode `(v  1 e 1 0 ]
+"26 /home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/itoa.c
+[v _itoa itoa `(v  1 e 1 0 ]
+"35 /home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/keypad.c
+[v _kpRead kpRead `(ui  1 e 2 0 ]
+"39
+[v _kpDebounce kpDebounce `(v  1 e 1 0 ]
+"87
+[v _kpInit kpInit `(v  1 e 1 0 ]
+"33 /home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/lcd.c
+[v _Delay40us Delay40us `(v  1 e 1 0 ]
+"39
+[v _Delay2ms Delay2ms `(v  1 e 1 0 ]
+"50
+[v _lcdCommand lcdCommand `(v  1 e 1 0 ]
+"74
+[v _lcdData lcdData `(v  1 e 1 0 ]
+"95
+[v _lcdInit lcdInit `(v  1 e 1 0 ]
+"118
+[v _lcdPosition lcdPosition `(v  1 e 1 0 ]
+"127
+[v _lcd_str lcd_str `(v  1 e 1 0 ]
+"17 /home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+[v _main main `(v  1 e 1 0 ]
+"24 /home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/pwm.c
+[v _pwmSet1 pwmSet1 `(v  1 e 1 0 ]
+"60
+[v _pwmInit pwmInit `(v  1 e 1 0 ]
+"7 /home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/temperaturaForno.c
+[v _setTemperature setTemperature `(i  1 e 2 0 ]
+"52 /home/maissa/microchip/mplabx/v5.45/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8/pic/include/proc/pic18f4520.h
+[v _PORTA PORTA `VEuc  1 e 1 @3968 ]
+"271
+[v _PORTB PORTB `VEuc  1 e 1 @3969 ]
+"450
+[v _PORTC PORTC `VEuc  1 e 1 @3970 ]
+[s S264 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+"497
+[s S273 . 1 `uc 1 T1OSO 1 0 :1:0 
+`uc 1 T1OSI 1 0 :1:1 
+`uc 1 CCP1 1 0 :1:2 
+`uc 1 SCK 1 0 :1:3 
+`uc 1 SDI 1 0 :1:4 
+`uc 1 SDO 1 0 :1:5 
+`uc 1 TX 1 0 :1:6 
+`uc 1 RX 1 0 :1:7 
+]
+[s S282 . 1 `uc 1 T13CKI 1 0 :1:0 
+`uc 1 CCP2 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 SCL 1 0 :1:3 
+`uc 1 SDA 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 CK 1 0 :1:6 
+`uc 1 DT 1 0 :1:7 
+]
+[s S291 . 1 `uc 1 T1CKI 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 P1A 1 0 :1:2 
+]
+[s S295 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 PA2 1 0 :1:1 
+`uc 1 PA1 1 0 :1:2 
+]
+[u S299 . 1 `S264 1 . 1 0 `S273 1 . 1 0 `S282 1 . 1 0 `S291 1 . 1 0 `S295 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES299  1 e 1 @3970 ]
+"632
+[v _PORTD PORTD `VEuc  1 e 1 @3971 ]
+"774
+[v _PORTE PORTE `VEuc  1 e 1 @3972 ]
+"1477
+[v _TRISA TRISA `VEuc  1 e 1 @3986 ]
+"1699
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+"1921
+[v _TRISC TRISC `VEuc  1 e 1 @3988 ]
+[s S341 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"1953
+[u S359 . 1 `S341 1 . 1 0 `S264 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES359  1 e 1 @3988 ]
+"2143
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+"2365
+[v _TRISE TRISE `VEuc  1 e 1 @3990 ]
+"4401
+[v _CCP2CON CCP2CON `VEuc  1 e 1 @4026 ]
+"4487
+[v _CCPR2L CCPR2L `VEuc  1 e 1 @4027 ]
+"4501
+[v _CCP1CON CCP1CON `VEuc  1 e 1 @4029 ]
+"4605
+[v _CCPR1L CCPR1L `VEuc  1 e 1 @4030 ]
+"4619
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @4032 ]
+"4690
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
+"4775
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @4034 ]
+[s S134 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_NOT_DONE 1 0 :1:1 
+]
+"4819
+[s S137 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS 1 0 :4:2 
+]
+[s S141 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+]
+[s S148 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 DONE 1 0 :1:1 
+]
+[s S151 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 NOT_DONE 1 0 :1:1 
+]
+[s S154 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 nDONE 1 0 :1:1 
+]
+[s S157 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_DONE 1 0 :1:1 
+]
+[s S160 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GODONE 1 0 :1:1 
+]
+[u S163 . 1 `S134 1 . 1 0 `S137 1 . 1 0 `S141 1 . 1 0 `S148 1 . 1 0 `S151 1 . 1 0 `S154 1 . 1 0 `S157 1 . 1 0 `S160 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES163  1 e 1 @4034 ]
+"4901
+[v _ADRESL ADRESL `VEuc  1 e 1 @4035 ]
+"4908
+[v _ADRESH ADRESH `VEuc  1 e 1 @4036 ]
+"5315
+[v _T2CON T2CON `VEuc  1 e 1 @4042 ]
+"5413
+[v _PR2 PR2 `VEuc  1 e 1 @4043 ]
+"17 /home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/configuraTemperatura.c
+[v _tmax tmax `uc  1 e 1 0 ]
+"18
+[v _tmin tmin `uc  1 e 1 0 ]
+"25 /home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/keypad.c
+[v _valor valor `ui  1 s 2 valor ]
+"17 /home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"23
+[v main@str str `[6]uc  1 a 6 55 ]
+"24
+[v main@tempoRelogio tempoRelogio `[6]uc  1 a 6 43 ]
+"19
+[v main@cont cont `ul  1 a 4 39 ]
+"18
+[v main@tecla tecla `ui  1 a 2 70 ]
+"25
+[v main@tempoTotal tempoTotal `ui  1 a 2 68 ]
+[v main@temperaturaLcd temperaturaLcd `ui  1 a 2 66 ]
+"20
+[v main@temperatura temperatura `ui  1 a 2 61 ]
+"25
+[v main@tmpi tmpi `ui  1 a 2 53 ]
+"20
+[v main@temperaturaMinima temperaturaMinima `ui  1 a 2 51 ]
+[v main@temperaturaMaxima temperaturaMaxima `ui  1 a 2 49 ]
+"21
+[v main@minutosUnidade minutosUnidade `uc  1 a 1 65 ]
+[v main@minutosDezena minutosDezena `uc  1 a 1 64 ]
+[v main@minutosCentena minutosCentena `uc  1 a 1 63 ]
+"159
+} 0
+"7 /home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/temperaturaForno.c
+[v _setTemperature setTemperature `(i  1 e 2 0 ]
+{
+"8
+[v setTemperature@str str `[6]uc  1 a 6 28 ]
+"10
+[v setTemperature@temperatura temperatura `i  1 a 2 35 ]
+"9
+[v setTemperature@tmp tmp `uc  1 a 1 34 ]
+"23
+} 0
+"118 /home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/lcd.c
+[v _lcdPosition lcdPosition `(v  1 e 1 0 ]
+{
+[v lcdPosition@linha linha `uc  1 a 1 wreg ]
+"119
+[v lcdPosition@comando comando `uc  1 a 1 9 ]
+"118
+[v lcdPosition@linha linha `uc  1 a 1 wreg ]
+[v lcdPosition@coluna coluna `uc  1 p 1 8 ]
+[v lcdPosition@linha linha `uc  1 a 1 10 ]
+"125
+} 0
+"26 /home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/itoa.c
+[v _itoa itoa `(v  1 e 1 0 ]
+{
+[v itoa@val val `ui  1 p 2 20 ]
+[v itoa@str str `*.39uc  1 p 2 22 ]
+"34
+} 0
+"7 /home/maissa/microchip/xc8/v2.32/pic/sources/c99/common/lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 4 ]
+"7
+[v ___lwmod@dividend dividend `ui  1 p 2 0 ]
+[v ___lwmod@divisor divisor `ui  1 p 2 2 ]
+"25
+} 0
+"44 /home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/adc.c
+[v _adc_amostra adc_amostra `(ui  1 e 2 0 ]
+{
+[v adc_amostra@canal canal `uc  1 a 1 wreg ]
+[v adc_amostra@canal canal `uc  1 a 1 wreg ]
+[v adc_amostra@canal canal `uc  1 a 1 6 ]
+"81
+} 0
+"24 /home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/pwm.c
+[v _pwmSet1 pwmSet1 `(v  1 e 1 0 ]
+{
+[v pwmSet1@porcento porcento `uc  1 a 1 wreg ]
+"31
+[v pwmSet1@val val `ui  1 a 2 23 ]
+"24
+[v pwmSet1@porcento porcento `uc  1 a 1 wreg ]
+"31
+[v pwmSet1@porcento porcento `uc  1 a 1 22 ]
+"39
+} 0
+"15 /home/maissa/microchip/xc8/v2.32/pic/sources/c99/common/Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 11 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 7 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 9 ]
+"53
+} 0
+"7 /home/maissa/microchip/xc8/v2.32/pic/sources/c99/common/lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 17 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 19 ]
+"7
+[v ___lwdiv@dividend dividend `ui  1 p 2 13 ]
+[v ___lwdiv@divisor divisor `ui  1 p 2 15 ]
+"30
+} 0
+"60 /home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/pwm.c
+[v _pwmInit pwmInit `(v  1 e 1 0 ]
+{
+"71
+} 0
+"127 /home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/lcd.c
+[v _lcd_str lcd_str `(v  1 e 1 0 ]
+{
+"128
+[v lcd_str@i i `uc  1 a 1 12 ]
+"127
+[v lcd_str@str str `*.25Cuc  1 p 2 8 ]
+"134
+} 0
+"74
+[v _lcdData lcdData `(v  1 e 1 0 ]
+{
+[v lcdData@valor valor `uc  1 a 1 wreg ]
+"77
+[v lcdData@old_D old_D `uc  1 a 1 7 ]
+"74
+[v lcdData@valor valor `uc  1 a 1 wreg ]
+"78
+[v lcdData@valor valor `uc  1 a 1 6 ]
+"92
+} 0
+"95
+[v _lcdInit lcdInit `(v  1 e 1 0 ]
+{
+"116
+} 0
+"54 /home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/io.c
+[v _pinMode pinMode `(v  1 e 1 0 ]
+{
+[v pinMode@pin pin `i  1 p 2 0 ]
+[v pinMode@type type `i  1 p 2 2 ]
+"73
+} 0
+"50 /home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/lcd.c
+[v _lcdCommand lcdCommand `(v  1 e 1 0 ]
+{
+[v lcdCommand@cmd cmd `uc  1 a 1 wreg ]
+"52
+[v lcdCommand@old_D old_D `uc  1 a 1 6 ]
+"50
+[v lcdCommand@cmd cmd `uc  1 a 1 wreg ]
+"53
+[v lcdCommand@cmd cmd `uc  1 a 1 7 ]
+"72
+} 0
+"14 /home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/io.c
+[v _digitalWrite digitalWrite `(v  1 e 1 0 ]
+{
+[v digitalWrite@pin pin `i  1 p 2 0 ]
+[v digitalWrite@value value `i  1 p 2 2 ]
+"38
+} 0
+"39 /home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/lcd.c
+[v _Delay2ms Delay2ms `(v  1 e 1 0 ]
+{
+"41
+[v Delay2ms@i i `uc  1 a 1 1 ]
+"46
+} 0
+"33
+[v _Delay40us Delay40us `(v  1 e 1 0 ]
+{
+"35
+[v Delay40us@i i `uc  1 a 1 0 ]
+"37
+} 0
+"35 /home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/keypad.c
+[v _kpRead kpRead `(ui  1 e 2 0 ]
+{
+"37
+} 0
+"87
+[v _kpInit kpInit `(v  1 e 1 0 ]
+{
+"92
+} 0
+"39
+[v _kpDebounce kpDebounce `(v  1 e 1 0 ]
+{
+"63
+[v kpDebounce@k k `i  1 a 2 6 ]
+"40
+[v kpDebounce@i i `uc  1 a 1 9 ]
+[v kpDebounce@j j `uc  1 a 1 8 ]
+"46
+[v kpDebounce@old_D old_D `uc  1 a 1 5 ]
+"41
+[v kpDebounce@tempo tempo `uc  1 s 1 tempo ]
+"42
+[v kpDebounce@valorNovo valorNovo `ui  1 s 2 valorNovo ]
+"43
+[v kpDebounce@valorAntigo valorAntigo `ui  1 s 2 valorAntigo ]
+"85
+} 0
+"3 /home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/atraso.c
+[v _atraso_ms atraso_ms `(v  1 e 1 0 ]
+{
+"5
+[v atraso_ms@i i `VEui  1 a 2 2 ]
+"4
+[v atraso_ms@k k `VEuc  1 a 1 5 ]
+[v atraso_ms@j j `VEuc  1 a 1 4 ]
+"3
+[v atraso_ms@t t `ui  1 p 2 0 ]
+"11
+} 0
+"30 /home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/adc.c
+[v _adc_init adc_init `(v  1 e 1 0 ]
+{
+"42
+} 0

@@ -1,0 +1,58 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"29 ./adc.h
+[; ;./adc.h: 29: unsigned int adc_amostra(unsigned char canal);
+[v _adc_amostra `(ui ~T0 @X0 0 ef1`uc ]
+"26 ./itoa.h
+[; ;./itoa.h: 26: void itoa(unsigned int val, char* str );
+[v _itoa `(v ~T0 @X0 0 ef2`ui`*uc ]
+"26 ./lcd.h
+[; ;./lcd.h: 26:     void lcdPosition(unsigned char linha, unsigned char coluna);
+[v _lcdPosition `(v ~T0 @X0 0 ef2`uc`uc ]
+"24
+[; ;./lcd.h: 24:  void lcdData(unsigned char valor);
+[v _lcdData `(v ~T0 @X0 0 ef1`uc ]
+"7 temperaturaForno.c
+[; ;temperaturaForno.c: 7: int setTemperature() {
+[v _setTemperature `(i ~T0 @X0 1 ef ]
+{
+[e :U _setTemperature ]
+[f ]
+"8
+[; ;temperaturaForno.c: 8:     char str[6];
+[v _str `uc ~T0 @X0 -> 6 `i a ]
+"9
+[; ;temperaturaForno.c: 9:     unsigned char tmp;
+[v _tmp `uc ~T0 @X0 1 a ]
+"10
+[; ;temperaturaForno.c: 10:     int i, temperatura;
+[v _i `i ~T0 @X0 1 a ]
+[v _temperatura `i ~T0 @X0 1 a ]
+"12
+[; ;temperaturaForno.c: 12:     tmp = (adc_amostra(0)*10) / 204;
+[e = _tmp -> / * ( _adc_amostra (1 -> -> 0 `i `uc -> -> 10 `i `ui -> -> 204 `i `ui `uc ]
+"13
+[; ;temperaturaForno.c: 13:     temperatura = (((int) tmp) * 4) + 50;
+[e = _temperatura + * -> _tmp `i -> 4 `i -> 50 `i ]
+"15
+[; ;temperaturaForno.c: 15:     itoa((char) temperatura, str);
+[e ( _itoa (2 , -> -> _temperatura `uc `ui &U _str ]
+"17
+[; ;temperaturaForno.c: 17:     lcdPosition(0, 12);
+[e ( _lcdPosition (2 , -> -> 0 `i `uc -> -> 12 `i `uc ]
+"18
+[; ;temperaturaForno.c: 18:     lcdData(str[2]);
+[e ( _lcdData (1 -> *U + &U _str * -> -> -> 2 `i `ui `ux -> -> # *U &U _str `ui `ux `uc ]
+"19
+[; ;temperaturaForno.c: 19:     lcdData(str[3]);
+[e ( _lcdData (1 -> *U + &U _str * -> -> -> 3 `i `ui `ux -> -> # *U &U _str `ui `ux `uc ]
+"20
+[; ;temperaturaForno.c: 20:     lcdData(str[4]);
+[e ( _lcdData (1 -> *U + &U _str * -> -> -> 4 `i `ui `ux -> -> # *U &U _str `ui `ux `uc ]
+"22
+[; ;temperaturaForno.c: 22:     return temperatura;
+[e ) _temperatura ]
+[e $UE 1  ]
+"23
+[; ;temperaturaForno.c: 23: }
+[e :UE 1 ]
+}
