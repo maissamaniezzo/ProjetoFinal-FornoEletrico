@@ -4539,8 +4539,7 @@ void main(void) {
                     PORTB = 0xFF;
 
 
-                    while ((!((tecla) & (1<<(4))) && (tempoTotal > 0))) {
-                        lcdCommand(0x01);
+                    while (tempoTotal > 0) {
 
                         lcdPosition(0, 2);
                         lcd_str("Funcionando!");
@@ -4578,12 +4577,6 @@ void main(void) {
                         if (temperaturaLcd < temperaturaMinima * 10) {
                             PORTCbits.RC5 = 1;
                         }
-
-
-                        kpDebounce();
-                        if (kpRead() != tecla) {
-                            tecla = kpRead();
-                        }
                     }
                 }
 
@@ -4592,6 +4585,35 @@ void main(void) {
                 PORTCbits.RC5 = 0;
                 TRISCbits.TRISC0 = 0;
                 pwmSet1(0);
+
+
+                pwmFrequency(100);
+                for (int i = 0; i < 2; i++) {
+                    for (int j = 1; j > 0; j = j * 2) {
+                        ((TRISC) |= (1<<(1)));
+                        atraso_ms(100);
+                        break;
+                    }
+                    ((TRISC) &= ~(1<<(1)));
+                }
+                atraso_ms(1000);
+                for (int i = 0; i < 2; i++) {
+                    for (int j = 1; j > 0; j = j * 2) {
+                        ((TRISC) |= (1<<(1)));
+                        atraso_ms(100);
+                        break;
+                    }
+                    ((TRISC) &= ~(1<<(1)));
+                }
+                atraso_ms(1000);
+                for (int i = 0; i < 2; i++) {
+                    for (int j = 1; j > 0; j = j * 2) {
+                        ((TRISC) |= (1<<(1)));
+                        atraso_ms(100);
+                        break;
+                    }
+                    ((TRISC) &= ~(1<<(1)));
+                }
             }
 
         }

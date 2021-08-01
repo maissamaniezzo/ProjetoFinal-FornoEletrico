@@ -112,6 +112,8 @@ PIN_E7 39
 [v _main main `(v  1 e 1 0 ]
 "24 /home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/pwm.c
 [v _pwmSet1 pwmSet1 `(v  1 e 1 0 ]
+"53
+[v _pwmFrequency pwmFrequency `(v  1 e 1 0 ]
 "60
 [v _pwmInit pwmInit `(v  1 e 1 0 ]
 "7 /home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/temperaturaForno.c
@@ -249,15 +251,27 @@ PIN_E7 39
 "17 /home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
 [v _main main `(v  1 e 1 0 ]
 {
+"179
+[v main@j_439 j `i  1 a 2 76 ]
+"170
+[v main@j_437 j `i  1 a 2 74 ]
+"161
+[v main@j j `i  1 a 2 72 ]
+"178
+[v main@i_438 i `i  1 a 2 63 ]
+"169
+[v main@i_436 i `i  1 a 2 61 ]
+"160
+[v main@i i `i  1 a 2 59 ]
 "22
 [v main@str str `[6]uc  1 a 6 51 ]
 "23
 [v main@tempoRelogio tempoRelogio `[6]uc  1 a 6 39 ]
 "18
-[v main@tecla tecla `ui  1 a 2 66 ]
+[v main@tecla tecla `ui  1 a 2 78 ]
 "24
-[v main@tempoTotal tempoTotal `ui  1 a 2 64 ]
-[v main@temperaturaLcd temperaturaLcd `ui  1 a 2 62 ]
+[v main@tempoTotal tempoTotal `ui  1 a 2 70 ]
+[v main@temperaturaLcd temperaturaLcd `ui  1 a 2 68 ]
 "19
 [v main@temperatura temperatura `ui  1 a 2 57 ]
 "24
@@ -266,10 +280,10 @@ PIN_E7 39
 [v main@temperaturaMinima temperaturaMinima `ui  1 a 2 47 ]
 [v main@temperaturaMaxima temperaturaMaxima `ui  1 a 2 45 ]
 "20
-[v main@minutosUnidade minutosUnidade `uc  1 a 1 61 ]
-[v main@minutosDezena minutosDezena `uc  1 a 1 60 ]
-[v main@minutosCentena minutosCentena `uc  1 a 1 59 ]
-"168
+[v main@minutosUnidade minutosUnidade `uc  1 a 1 67 ]
+[v main@minutosDezena minutosDezena `uc  1 a 1 66 ]
+[v main@minutosCentena minutosCentena `uc  1 a 1 65 ]
+"190
 } 0
 "7 /home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/temperaturaForno.c
 [v _setTemperature setTemperature `(i  1 e 2 0 ]
@@ -357,6 +371,25 @@ PIN_E7 39
 [v _pwmInit pwmInit `(v  1 e 1 0 ]
 {
 "71
+} 0
+"53
+[v _pwmFrequency pwmFrequency `(v  1 e 1 0 ]
+{
+[v pwmFrequency@freq freq `ui  1 p 2 14 ]
+"58
+} 0
+"7 /home/maissa/microchip/xc8/v2.32/pic/sources/c99/common/aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+{
+"10
+[v ___aldiv@quotient quotient `l  1 a 4 10 ]
+"11
+[v ___aldiv@sign sign `uc  1 a 1 9 ]
+[v ___aldiv@counter counter `uc  1 a 1 8 ]
+"7
+[v ___aldiv@dividend dividend `l  1 p 4 0 ]
+[v ___aldiv@divisor divisor `l  1 p 4 4 ]
+"41
 } 0
 "127 /home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/lcd.c
 [v _lcd_str lcd_str `(v  1 e 1 0 ]
