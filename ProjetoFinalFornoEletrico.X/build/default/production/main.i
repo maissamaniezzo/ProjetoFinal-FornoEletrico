@@ -10,7 +10,6 @@
 
 
 
-
 # 1 "/home/maissa/microchip/mplabx/v5.45/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8/pic/include/proc/pic18f4520.h" 1 3
 # 44 "/home/maissa/microchip/mplabx/v5.45/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8/pic/include/proc/pic18f4520.h" 3
 # 1 "/home/maissa/microchip/mplabx/v5.45/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8/pic/include/__at.h" 1 3
@@ -4359,7 +4358,7 @@ extern volatile __bit nWR __attribute__((address(0x7C21)));
 
 
 extern volatile __bit nWRITE __attribute__((address(0x7E3A)));
-# 6 "main.c" 2
+# 5 "main.c" 2
 # 1 "./config.h" 1
 # 26 "./config.h"
 #pragma config OSC=HS
@@ -4399,9 +4398,9 @@ extern volatile __bit nWRITE __attribute__((address(0x7E3A)));
 #pragma config EBTR2 = OFF
 #pragma config EBTR3 = OFF
 #pragma config EBTRB = OFF
-# 7 "main.c" 2
+# 6 "main.c" 2
 # 1 "./bits.h" 1
-# 8 "main.c" 2
+# 7 "main.c" 2
 # 1 "./lcd.h" 1
 # 23 "./lcd.h"
  void lcdCommand(unsigned char cmd);
@@ -4409,40 +4408,40 @@ extern volatile __bit nWRITE __attribute__((address(0x7E3A)));
  void lcdInit(void);
     void lcdPosition(unsigned char linha, unsigned char coluna);
     void lcd_str(const char* str);
-# 9 "main.c" 2
+# 8 "main.c" 2
 # 1 "./keypad.h" 1
 # 23 "./keypad.h"
  unsigned int kpRead(void);
  void kpDebounce(void);
  void kpInit(void);
-# 10 "main.c" 2
+# 9 "main.c" 2
 # 1 "./temperaturaForno.h" 1
 # 11 "./temperaturaForno.h"
 int setTemperature();
-# 11 "main.c" 2
+# 10 "main.c" 2
 # 1 "./adc.h" 1
 # 27 "./adc.h"
 void adc_init(void);
 
 unsigned int adc_amostra(unsigned char canal);
-# 12 "main.c" 2
+# 11 "main.c" 2
 # 1 "./pwm.h" 1
 # 23 "./pwm.h"
  void pwmSet1(unsigned char porcento);
  void pwmSet2(unsigned char porcento);
  void pwmFrequency(unsigned int freq);
  void pwmInit(void);
-# 13 "main.c" 2
+# 12 "main.c" 2
 # 1 "./itoa.h" 1
 # 26 "./itoa.h"
 void itoa(unsigned int val, char* str );
-# 14 "main.c" 2
+# 13 "main.c" 2
 # 1 "./atraso.h" 1
 
 
 
     void atraso_ms(unsigned int t);
-# 15 "main.c" 2
+# 14 "main.c" 2
 
 
 void main(void) {
@@ -4462,8 +4461,9 @@ void main(void) {
     kpInit();
 
     for (;;) {
-        lcdPosition(0, 1);
 
+
+        lcdPosition(0, 1);
         lcd_str("Vamos iniciar!");
         lcdPosition(1, 1);
         lcd_str("Clique em (1)");
@@ -4571,7 +4571,6 @@ void main(void) {
 
 
                         if (temperaturaLcd > temperaturaMaxima * 10) {
-                            atraso_ms(100);
                             PORTCbits.RC5 = 0;
                         }
                         if (temperaturaLcd < temperaturaMinima * 10) {

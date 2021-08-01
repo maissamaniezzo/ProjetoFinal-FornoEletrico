@@ -5,7 +5,7 @@ Linker command line:
 -W-3 --edf=/home/maissa/microchip/xc8/v2.32/pic/dat/en_msgs.txt -cn \
   -h+dist/default/production/ProjetoFinalFornoEletrico.X.production.sym \
   --cmf=dist/default/production/ProjetoFinalFornoEletrico.X.production.cmf \
-  -z -Q18F4520 -o/tmp/xcXNKOoFb --defsym=__MPLAB_BUILD=1 \
+  -z -Q18F4520 -o/tmp/xcXodLAgm --defsym=__MPLAB_BUILD=1 \
   -Mdist/default/production/ProjetoFinalFornoEletrico.X.production.map -E1 \
   -ver=XC8 Compiler --acfsm=1493 -ASTACK=080h-05FFh -pstack=STACK \
   -ACODE=00h-07FFFh -ACONST=00h-07FFFh -ASMALLCONST=0600h-06FFhx122 \
@@ -22,7 +22,7 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
-  /tmp/xcXgCjhlN.o \
+  /tmp/xcXgIneIJ.o \
   dist/default/production/ProjetoFinalFornoEletrico.X.production.o 
 
 Object code version is 3.11
@@ -32,7 +32,7 @@ Machine type is 18F4520
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-/tmp/xcXgCjhlN.o
+/tmp/xcXgIneIJ.o
                 idloc                            200000   200000        8        0       5
                 config                           300000   300000        E        0       4
                 init                                  0        0        4        0       0
@@ -40,64 +40,64 @@ dist/default/production/ProjetoFinalFornoEletrico.X.production.o
                 idloc                            200000   200000        8        0       5
                 config                           300000   300000        E        0       4
                 smallconst                          600      600       46      300       0
-                text23                             16C8     16C8       64      323       0
-                text22                              FEE      FEE      17A      323       0
-                text21                             18BE     18BE        A      323       0
-                text20                             18B4     18B4        A      323       0
-                text19                             1872     1872       18      323       0
-                text18                             1856     1856       1C      323       0
-                text17                              DA0      DA0      24E      323       0
-                text16                             148E     148E       7E      323       0
-                text15                              B52      B52      24E      323       0
-                text14                             150C     150C       78      323       0
-                text13                             172C     172C       54      323       0
-                text12                             1780     1780       50      323       0
-                text11                             1168     1168      10C      323       0
-                text10                             1830     1830       26      323       0
-                text9                              18A0     18A0       14      323       0
-                text8                              1584     1584       74      323       0
-                text7                              180A     180A       26      323       0
-                text6                              15F8     15F8       6C      323       0
-                text5                              137C     137C       90      323       0
-                text4                              1664     1664       64      323       0
-                text3                              1274     1274      108      323       0
-                text2                              17D0     17D0       3A      323       0
-                text1                              140C     140C       82      323       0
-                text0                               646      646      50C      323       0
+                text23                             16BC     16BC       64      323       0
+                text22                              FE2      FE2      17A      323       0
+                text21                             18B2     18B2        A      323       0
+                text20                             18A8     18A8        A      323       0
+                text19                             1866     1866       18      323       0
+                text18                             184A     184A       1C      323       0
+                text17                              D94      D94      24E      323       0
+                text16                             1482     1482       7E      323       0
+                text15                              B46      B46      24E      323       0
+                text14                             1500     1500       78      323       0
+                text13                             1720     1720       54      323       0
+                text12                             1774     1774       50      323       0
+                text11                             115C     115C      10C      323       0
+                text10                             1824     1824       26      323       0
+                text9                              1894     1894       14      323       0
+                text8                              1578     1578       74      323       0
+                text7                              17FE     17FE       26      323       0
+                text6                              15EC     15EC       6C      323       0
+                text5                              1370     1370       90      323       0
+                text4                              1658     1658       64      323       0
+                text3                              1268     1268      108      323       0
+                text2                              17C4     17C4       3A      323       0
+                text1                              1400     1400       82      323       0
+                text0                               646      646      500      323       0
                 cstackCOMRAM                          1        1       50        1       1
                 bssCOMRAM                            51       51        C        1       1
-                cinit                              188A     188A       16      323       0
+                cinit                              187E     187E       16      323       0
 
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   STACK          
 
         CLASS   CODE           
                 init                                  0        0        4         0
-                text23                             16C8     16C8       64         0
-                text22                              FEE      FEE      17A         0
-                text21                             18BE     18BE        A         0
-                text20                             18B4     18B4        A         0
-                text19                             1872     1872       18         0
-                text18                             1856     1856       1C         0
-                text17                              DA0      DA0      24E         0
-                text16                             148E     148E       7E         0
-                text15                              B52      B52      24E         0
-                text14                             150C     150C       78         0
-                text13                             172C     172C       54         0
-                text12                             1780     1780       50         0
-                text11                             1168     1168      10C         0
-                text10                             1830     1830       26         0
-                text9                              18A0     18A0       14         0
-                text8                              1584     1584       74         0
-                text7                              180A     180A       26         0
-                text6                              15F8     15F8       6C         0
-                text5                              137C     137C       90         0
-                text4                              1664     1664       64         0
-                text3                              1274     1274      108         0
-                text2                              17D0     17D0       3A         0
-                text1                              140C     140C       82         0
-                text0                               646      646      50C         0
-                cinit                              188A     188A       16         0
+                text23                             16BC     16BC       64         0
+                text22                              FE2      FE2      17A         0
+                text21                             18B2     18B2        A         0
+                text20                             18A8     18A8        A         0
+                text19                             1866     1866       18         0
+                text18                             184A     184A       1C         0
+                text17                              D94      D94      24E         0
+                text16                             1482     1482       7E         0
+                text15                              B46      B46      24E         0
+                text14                             1500     1500       78         0
+                text13                             1720     1720       54         0
+                text12                             1774     1774       50         0
+                text11                             115C     115C      10C         0
+                text10                             1824     1824       26         0
+                text9                              1894     1894       14         0
+                text8                              1578     1578       74         0
+                text7                              17FE     17FE       26         0
+                text6                              15EC     15EC       6C         0
+                text5                              1370     1370       90         0
+                text4                              1658     1658       64         0
+                text3                              1268     1268      108         0
+                text2                              17C4     17C4       3A         0
+                text1                              1400     1400       82         0
+                text0                               646      646      500         0
+                cinit                              187E     187E       16         0
 
         CLASS   CONST          
 
@@ -146,7 +146,7 @@ SEGMENTS        Name                           Load    Length   Top    Selector 
 
                 reset_vec                      000000  000004  000004         0       0  CODE    
                 cstackCOMRAM                   000001  00005C  00005D         1       1  COMRAM  
-                text0                          000646  001282  0018C8       323       0  CODE    
+                text0                          000646  001276  0018BC       323       0  CODE    
                 smallconst                     000600  000046  000646       300       0  SMALLCON
 
 
@@ -161,15 +161,15 @@ UNUSED ADDRESS RANGES
         BANK5            000500-0005FF              100
         BIGRAM           00005D-0005FF              5A3
         CODE             000004-0005FF              5FC
-                         0018C8-007FFF             6738
+                         0018BC-007FFF             6744
         COMRAM           00005D-00007F               23
         CONST            000004-0005FF              5FC
-                         0018C8-007FFF             6738
+                         0018BC-007FFF             6744
         EEDATA           F00000-F000FF              100
-        MEDIUMCONST      0018C8-007FFF             6738
+        MEDIUMCONST      0018BC-007FFF             6744
         RAM              000080-0005FF              100
         SFR              000F80-000FFF               80
-        SMALLCONST       0018C8-007FFF              100
+        SMALLCONST       0018BC-007FFF              100
         STACK            000080-0005FF              580
 
                                   Symbol Table
@@ -193,8 +193,8 @@ _CCP1CON                   (abs)        000FBD
 _CCP2CON                   (abs)        000FBA
 _CCPR1L                    (abs)        000FBE
 _CCPR2L                    (abs)        000FBB
-_Delay2ms                  text18       001856
-_Delay40us                 text19       001872
+_Delay2ms                  text18       00184A
+_Delay40us                 text19       001866
 _PORTA                     (abs)        000F80
 _PORTB                     (abs)        000F81
 _PORTC                     (abs)        000F82
@@ -259,7 +259,7 @@ __Hreset_vec               reset_vec    000000
 __Hrparam                  rparam       000000
 __Hsfr                     sfr          000000
 __Hsmallconst              smallconst   000646
-__Hspace_0                 (abs)        0018C8
+__Hspace_0                 (abs)        0018BC
 __Hspace_1                 (abs)        00005D
 __Hspace_2                 (abs)        000000
 __Hspace_4                 (abs)        60000E
@@ -373,12 +373,12 @@ __Ltext6                   text6        000000
 __Ltext7                   text7        000000
 __Ltext8                   text8        000000
 __Ltext9                   text9        000000
-__S0                       (abs)        0018C8
+__S0                       (abs)        0018BC
 __S1                       (abs)        00005D
 __S2                       (abs)        000000
 __S4                       (abs)        000000
 __S5                       (abs)        000000
-___aldiv                   text11       001168
+___aldiv                   text11       00115C
 ___aldiv@counter           cstackCOMRAM 000009
 ___aldiv@dividend          cstackCOMRAM 000001
 ___aldiv@divisor           cstackCOMRAM 000005
@@ -386,79 +386,79 @@ ___aldiv@quotient          cstackCOMRAM 00000B
 ___aldiv@sign              cstackCOMRAM 00000A
 ___inthi_sp                stack        000000
 ___intlo_sp                stack        000000
-___lwdiv                   text8        001584
+___lwdiv                   text8        001578
 ___lwdiv@counter           cstackCOMRAM 000014
 ___lwdiv@dividend          cstackCOMRAM 00000E
 ___lwdiv@divisor           cstackCOMRAM 000010
 ___lwdiv@quotient          cstackCOMRAM 000012
-___lwmod                   text4        001664
+___lwmod                   text4        001658
 ___lwmod@counter           cstackCOMRAM 000005
 ___lwmod@dividend          cstackCOMRAM 000001
 ___lwmod@divisor           cstackCOMRAM 000003
 ___param_bank              (abs)        000000
 ___rparam_used             (abs)        000001
 ___sp                      stack        000000
-___wmul                    text7        00180A
+___wmul                    text7        0017FE
 ___wmul@multiplicand       cstackCOMRAM 00000A
 ___wmul@multiplier         cstackCOMRAM 000008
 ___wmul@product            cstackCOMRAM 00000C
 __accesstop                (abs)        000080
 __activetblptr             (abs)        000002
-__end_of_Delay2ms          text18       001872
-__end_of_Delay40us         text19       00188A
-__end_of___aldiv           text11       001274
-__end_of___lwdiv           text8        0015F8
-__end_of___lwmod           text4        0016C8
-__end_of___wmul            text7        001830
-__end_of__initialization   cinit        001896
-__end_of_adc_amostra       text5        00140C
-__end_of_atraso_ms         text23       00172C
-__end_of_digitalWrite      text17       000FEE
-__end_of_itoa              text3        00137C
-__end_of_kpDebounce        text22       001168
-__end_of_kpInit            text21       0018C8
-__end_of_kpRead            text20       0018BE
-__end_of_lcdCommand        text16       00150C
-__end_of_lcdData           text13       001780
-__end_of_lcdInit           text14       001584
-__end_of_lcdPosition       text2        00180A
-__end_of_lcd_str           text12       0017D0
-__end_of_main              text0        000B52
-__end_of_pinMode           text15       000DA0
-__end_of_pwmFrequency      text10       001856
-__end_of_pwmInit           text9        0018B4
-__end_of_pwmSet1           text6        001664
-__end_of_setTemperature    text1        00148E
-__initialization           cinit        00188A
+__end_of_Delay2ms          text18       001866
+__end_of_Delay40us         text19       00187E
+__end_of___aldiv           text11       001268
+__end_of___lwdiv           text8        0015EC
+__end_of___lwmod           text4        0016BC
+__end_of___wmul            text7        001824
+__end_of__initialization   cinit        00188A
+__end_of_adc_amostra       text5        001400
+__end_of_atraso_ms         text23       001720
+__end_of_digitalWrite      text17       000FE2
+__end_of_itoa              text3        001370
+__end_of_kpDebounce        text22       00115C
+__end_of_kpInit            text21       0018BC
+__end_of_kpRead            text20       0018B2
+__end_of_lcdCommand        text16       001500
+__end_of_lcdData           text13       001774
+__end_of_lcdInit           text14       001578
+__end_of_lcdPosition       text2        0017FE
+__end_of_lcd_str           text12       0017C4
+__end_of_main              text0        000B46
+__end_of_pinMode           text15       000D94
+__end_of_pwmFrequency      text10       00184A
+__end_of_pwmInit           text9        0018A8
+__end_of_pwmSet1           text6        001658
+__end_of_setTemperature    text1        001482
+__initialization           cinit        00187E
 __mediumconst              mediumconst  000000
 __pbssCOMRAM               bssCOMRAM    000051
-__pcinit                   cinit        00188A
+__pcinit                   cinit        00187E
 __pcstackCOMRAM            cstackCOMRAM 000001
 __psmallconst              smallconst   000600
 __ptext0                   text0        000646
-__ptext1                   text1        00140C
-__ptext10                  text10       001830
-__ptext11                  text11       001168
-__ptext12                  text12       001780
-__ptext13                  text13       00172C
-__ptext14                  text14       00150C
-__ptext15                  text15       000B52
-__ptext16                  text16       00148E
-__ptext17                  text17       000DA0
-__ptext18                  text18       001856
-__ptext19                  text19       001872
-__ptext2                   text2        0017D0
-__ptext20                  text20       0018B4
-__ptext21                  text21       0018BE
-__ptext22                  text22       000FEE
-__ptext23                  text23       0016C8
-__ptext3                   text3        001274
-__ptext4                   text4        001664
-__ptext5                   text5        00137C
-__ptext6                   text6        0015F8
-__ptext7                   text7        00180A
-__ptext8                   text8        001584
-__ptext9                   text9        0018A0
+__ptext1                   text1        001400
+__ptext10                  text10       001824
+__ptext11                  text11       00115C
+__ptext12                  text12       001774
+__ptext13                  text13       001720
+__ptext14                  text14       001500
+__ptext15                  text15       000B46
+__ptext16                  text16       001482
+__ptext17                  text17       000D94
+__ptext18                  text18       00184A
+__ptext19                  text19       001866
+__ptext2                   text2        0017C4
+__ptext20                  text20       0018A8
+__ptext21                  text21       0018B2
+__ptext22                  text22       000FE2
+__ptext23                  text23       0016BC
+__ptext3                   text3        001268
+__ptext4                   text4        001658
+__ptext5                   text5        001370
+__ptext6                   text6        0015EC
+__ptext7                   text7        0017FE
+__ptext8                   text8        001578
+__ptext9                   text9        001894
 __ramtop                   ramtop       000600
 __size_of_Delay2ms         (abs)        000000
 __size_of_Delay40us        (abs)        000000
@@ -485,27 +485,27 @@ __size_of_pwmInit          (abs)        000000
 __size_of_pwmSet1          (abs)        000000
 __size_of_setTemperature   (abs)        000000
 __smallconst               smallconst   000600
-_adc_amostra               text5        00137C
-_atraso_ms                 text23       0016C8
+_adc_amostra               text5        001370
+_atraso_ms                 text23       0016BC
 _cnt                       bssCOMRAM    00005A
-_digitalWrite              text17       000DA0
+_digitalWrite              text17       000D94
 _i                         bssCOMRAM    00005B
-_itoa                      text3        001274
-_kpDebounce                text22       000FEE
-_kpInit                    text21       0018BE
-_kpRead                    text20       0018B4
-_lcdCommand                text16       00148E
-_lcdData                   text13       00172C
-_lcdInit                   text14       00150C
-_lcdPosition               text2        0017D0
-_lcd_str                   text12       001780
+_itoa                      text3        001268
+_kpDebounce                text22       000FE2
+_kpInit                    text21       0018B2
+_kpRead                    text20       0018A8
+_lcdCommand                text16       001482
+_lcdData                   text13       001720
+_lcdInit                   text14       001500
+_lcdPosition               text2        0017C4
+_lcd_str                   text12       001774
 _main                      text0        000646
 _perc                      bssCOMRAM    000059
-_pinMode                   text15       000B52
-_pwmFrequency              text10       001830
-_pwmInit                   text9        0018A0
-_pwmSet1                   text6        0015F8
-_setTemperature            text1        00140C
+_pinMode                   text15       000B46
+_pwmFrequency              text10       001824
+_pwmInit                   text9        001894
+_pwmSet1                   text6        0015EC
+_setTemperature            text1        001400
 _tmax                      bssCOMRAM    000058
 _tmin                      bssCOMRAM    000057
 _valor                     bssCOMRAM    000055
@@ -516,7 +516,7 @@ atraso_ms@k                cstackCOMRAM 000006
 atraso_ms@t                cstackCOMRAM 000001
 digitalWrite@pin           cstackCOMRAM 000001
 digitalWrite@value         cstackCOMRAM 000003
-end_of_initialization      cinit        001896
+end_of_initialization      cinit        00188A
 intlevel0                  text         000000
 intlevel1                  text         000000
 intlevel2                  text         000000
@@ -570,90 +570,90 @@ setTemperature@tmp         cstackCOMRAM 000023
 stackhi                    (abs)        0005FF
 stacklo                    (abs)        000080
 start                      init         000000
-start_initialization       cinit        00188A
+start_initialization       cinit        00187E
 
 
 MODULE INFORMATION
 
 Module		Function		Class		Link	Load	Size
 keypad.c
-		_kpInit        		CODE           	18BE	0000	10
-		_kpDebounce    		CODE           	0FEE	0000	378
-		_kpRead        		CODE           	18B4	0000	10
+		_kpInit        		CODE           	18B2	0000	10
+		_kpDebounce    		CODE           	0FE2	0000	378
+		_kpRead        		CODE           	18A8	0000	10
 
 keypad.c estimated size: 398
 
 io.c
-		_digitalWrite  		CODE           	0DA0	0000	590
-		_pinMode       		CODE           	0B52	0000	590
+		_digitalWrite  		CODE           	0D94	0000	590
+		_pinMode       		CODE           	0B46	0000	590
 
 io.c estimated size: 1180
 
 /home/maissa/microchip/xc8/v2.32/pic/sources/c99/common/Umul16.c
-		___wmul        		CODE           	180A	0000	38
+		___wmul        		CODE           	17FE	0000	38
 
 /home/maissa/microchip/xc8/v2.32/pic/sources/c99/common/Umul16.c estimated size: 38
 
 pwm.c
-		_pwmInit       		CODE           	18A0	0000	20
-		_pwmSet1       		CODE           	15F8	0000	108
-		_pwmFrequency  		CODE           	1830	0000	38
+		_pwmInit       		CODE           	1894	0000	20
+		_pwmSet1       		CODE           	15EC	0000	108
+		_pwmFrequency  		CODE           	1824	0000	38
 
 pwm.c estimated size: 166
 
 atraso.c
-		_atraso_ms     		CODE           	16C8	0000	100
+		_atraso_ms     		CODE           	16BC	0000	100
 
 atraso.c estimated size: 100
 
 adc.c
-		_adc_amostra   		CODE           	137C	0000	144
+		_adc_amostra   		CODE           	1370	0000	144
 
 adc.c estimated size: 144
 
 /home/maissa/microchip/xc8/v2.32/pic/sources/c99/common/lwmod.c
-		___lwmod       		CODE           	1664	0000	100
+		___lwmod       		CODE           	1658	0000	100
 
 /home/maissa/microchip/xc8/v2.32/pic/sources/c99/common/lwmod.c estimated size: 100
 
 temperaturaForno.c
-		_setTemperature		CODE           	140C	0000	130
+		_setTemperature		CODE           	1400	0000	130
 
 temperaturaForno.c estimated size: 130
 
 shared
-		__initialization		CODE           	188A	0000	12
+		__initialization		CODE           	187E	0000	12
 
 shared estimated size: 12
 
 lcd.c
-		_lcdCommand    		CODE           	148E	0000	126
-		_lcdPosition   		CODE           	17D0	0000	58
-		_Delay40us     		CODE           	1872	0000	24
-		_lcdInit       		CODE           	150C	0000	120
-		_lcdData       		CODE           	172C	0000	84
-		_lcd_str       		CODE           	1780	0000	80
-		_Delay2ms      		CODE           	1856	0000	28
+		_lcdCommand    		CODE           	1482	0000	126
+		_lcdPosition   		CODE           	17C4	0000	58
+		_Delay40us     		CODE           	1866	0000	24
+		_lcdInit       		CODE           	1500	0000	120
+		_lcdData       		CODE           	1720	0000	84
+		_lcd_str       		CODE           	1774	0000	80
+		_Delay2ms      		CODE           	184A	0000	28
 
 lcd.c estimated size: 520
 
 /home/maissa/microchip/xc8/v2.32/pic/sources/c99/common/lwdiv.c
-		___lwdiv       		CODE           	1584	0000	116
+		___lwdiv       		CODE           	1578	0000	116
 
 /home/maissa/microchip/xc8/v2.32/pic/sources/c99/common/lwdiv.c estimated size: 116
 
 itoa.c
-		_itoa          		CODE           	1274	0000	264
+		_itoa          		CODE           	1268	0000	264
 
 itoa.c estimated size: 264
 
 main.c
-		_main          		CODE           	0646	0000	1292
+		_main          		CODE           	0646	0000	1280
 
-main.c estimated size: 1292
+main.c estimated size: 1280
 
 /home/maissa/microchip/xc8/v2.32/pic/sources/c99/common/aldiv.c
-		___aldiv       		CODE           	1168	0000	268
+		___aldiv       		CODE           	115C	0000	268
 
 /home/maissa/microchip/xc8/v2.32/pic/sources/c99/common/aldiv.c estimated size: 268
 

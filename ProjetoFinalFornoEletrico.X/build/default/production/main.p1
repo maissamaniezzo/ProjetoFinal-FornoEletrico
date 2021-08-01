@@ -582,64 +582,64 @@ Version 4.0 HI-TECH Software Intermediate Code
 "62
 [p x EBTRB  =  OFF ]
 [v $root$_main `(v ~T0 @X0 0 e ]
-"17 main.c
-[; ;main.c: 17: void main(void) {
+"16 main.c
+[; ;main.c: 16: void main(void) {
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"18
-[; ;main.c: 18:     unsigned int tecla = 16;
+"17
+[; ;main.c: 17:     unsigned int tecla = 16;
 [v _tecla `ui ~T0 @X0 1 a ]
 [e = _tecla -> -> 16 `i `ui ]
-"19
-[; ;main.c: 19:     unsigned int temperatura = 180, temperaturaMaxima, temperaturaMinima;
+"18
+[; ;main.c: 18:     unsigned int temperatura = 180, temperaturaMaxima, temperaturaMinima;
 [v _temperatura `ui ~T0 @X0 1 a ]
 [e = _temperatura -> -> 180 `i `ui ]
 [v _temperaturaMaxima `ui ~T0 @X0 1 a ]
 [v _temperaturaMinima `ui ~T0 @X0 1 a ]
-"20
-[; ;main.c: 20:     char minutosCentena = 48, minutosDezena = 48, minutosUnidade = 48;
+"19
+[; ;main.c: 19:     char minutosCentena = 48, minutosDezena = 48, minutosUnidade = 48;
 [v _minutosCentena `uc ~T0 @X0 1 a ]
 [e = _minutosCentena -> -> 48 `i `uc ]
 [v _minutosDezena `uc ~T0 @X0 1 a ]
 [e = _minutosDezena -> -> 48 `i `uc ]
 [v _minutosUnidade `uc ~T0 @X0 1 a ]
 [e = _minutosUnidade -> -> 48 `i `uc ]
-"22
-[; ;main.c: 22:     char str[6];
+"21
+[; ;main.c: 21:     char str[6];
 [v _str `uc ~T0 @X0 -> 6 `i a ]
-"23
-[; ;main.c: 23:     char tempoRelogio[6];
+"22
+[; ;main.c: 22:     char tempoRelogio[6];
 [v _tempoRelogio `uc ~T0 @X0 -> 6 `i a ]
-"24
-[; ;main.c: 24:     unsigned int tmpi, temperaturaLcd, tempoTotal = 0;
+"23
+[; ;main.c: 23:     unsigned int tmpi, temperaturaLcd, tempoTotal = 0;
 [v _tmpi `ui ~T0 @X0 1 a ]
 [v _temperaturaLcd `ui ~T0 @X0 1 a ]
 [v _tempoTotal `ui ~T0 @X0 1 a ]
 [e = _tempoTotal -> -> 0 `i `ui ]
-"26
-[; ;main.c: 26:     TRISA = 0x07;
+"25
+[; ;main.c: 25:     TRISA = 0x07;
 [e = _TRISA -> -> 7 `i `uc ]
-"27
-[; ;main.c: 27:     TRISB = 0x00;
+"26
+[; ;main.c: 26:     TRISB = 0x00;
 [e = _TRISB -> -> 0 `i `uc ]
-"28
-[; ;main.c: 28:     TRISC = 0x00;
+"27
+[; ;main.c: 27:     TRISC = 0x00;
 [e = _TRISC -> -> 0 `i `uc ]
-"30
-[; ;main.c: 30:     lcdInit();
+"29
+[; ;main.c: 29:     lcdInit();
 [e ( _lcdInit ..  ]
-"31
-[; ;main.c: 31:     kpInit();
+"30
+[; ;main.c: 30:     kpInit();
 [e ( _kpInit ..  ]
-"33
-[; ;main.c: 33:     for (;;) {
+"32
+[; ;main.c: 32:     for (;;) {
 {
 [e :U 277 ]
 {
-"34
-[; ;main.c: 34:         lcdPosition(0, 1);
+"35
+[; ;main.c: 35:         lcdPosition(0, 1);
 [e ( _lcdPosition (2 , -> -> 0 `i `uc -> -> 1 `i `uc ]
 "36
 [; ;main.c: 36:         lcd_str("Vamos iniciar!");
@@ -909,58 +909,55 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $ ! > _temperaturaLcd * _temperaturaMaxima -> -> 10 `i `ui 301  ]
 {
 "143
-[; ;main.c: 143:                             atraso_ms(100);
-[e ( _atraso_ms (1 -> -> 100 `i `ui ]
-"144
-[; ;main.c: 144:                             PORTCbits.RC5 = 0;
+[; ;main.c: 143:                             PORTCbits.RC5 = 0;
 [e = . . _PORTCbits 0 5 -> -> 0 `i `uc ]
-"145
-[; ;main.c: 145:                         }
+"144
+[; ;main.c: 144:                         }
 }
 [e :U 301 ]
-"146
-[; ;main.c: 146:                         if (temperaturaLcd < temperaturaMinima * 10) {
+"145
+[; ;main.c: 145:                         if (temperaturaLcd < temperaturaMinima * 10) {
 [e $ ! < _temperaturaLcd * _temperaturaMinima -> -> 10 `i `ui 302  ]
 {
-"147
-[; ;main.c: 147:                             PORTCbits.RC5 = 1;
+"146
+[; ;main.c: 146:                             PORTCbits.RC5 = 1;
 [e = . . _PORTCbits 0 5 -> -> 1 `i `uc ]
-"148
-[; ;main.c: 148:                         }
+"147
+[; ;main.c: 147:                         }
 }
 [e :U 302 ]
-"149
-[; ;main.c: 149:                     }
+"148
+[; ;main.c: 148:                     }
 }
 [e :U 298 ]
 "111
 [; ;main.c: 111:                     while (tempoTotal > 0) {
 [e $ > _tempoTotal -> -> 0 `i `ui 299  ]
 [e :U 300 ]
-"150
-[; ;main.c: 150:                 }
+"149
+[; ;main.c: 149:                 }
 }
 [e :U 297 ]
-"152
-[; ;main.c: 152:                 lcdCommand(0x01);
+"151
+[; ;main.c: 151:                 lcdCommand(0x01);
 [e ( _lcdCommand (1 -> -> 1 `i `uc ]
-"153
-[; ;main.c: 153:                 PORTB = 0x00;
+"152
+[; ;main.c: 152:                 PORTB = 0x00;
 [e = _PORTB -> -> 0 `i `uc ]
-"154
-[; ;main.c: 154:                 PORTCbits.RC5 = 0;
+"153
+[; ;main.c: 153:                 PORTCbits.RC5 = 0;
 [e = . . _PORTCbits 0 5 -> -> 0 `i `uc ]
-"155
-[; ;main.c: 155:                 TRISCbits.TRISC0 = 0;
+"154
+[; ;main.c: 154:                 TRISCbits.TRISC0 = 0;
 [e = . . _TRISCbits 0 0 -> -> 0 `i `uc ]
-"156
-[; ;main.c: 156:                 pwmSet1(0);
+"155
+[; ;main.c: 155:                 pwmSet1(0);
 [e ( _pwmSet1 (1 -> -> 0 `i `uc ]
-"159
-[; ;main.c: 159:                 pwmFrequency(100);
+"158
+[; ;main.c: 158:                 pwmFrequency(100);
 [e ( _pwmFrequency (1 -> -> 100 `i `ui ]
-"160
-[; ;main.c: 160:                 for (int i = 0; i < 2; i++) {
+"159
+[; ;main.c: 159:                 for (int i = 0; i < 2; i++) {
 {
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
@@ -968,8 +965,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $U 304  ]
 [e :U 303 ]
 {
-"161
-[; ;main.c: 161:                     for (int j = 1; j > 0; j = j * 2) {
+"160
+[; ;main.c: 160:                     for (int j = 1; j > 0; j = j * 2) {
 {
 [v _j `i ~T0 @X0 1 a ]
 [e = _j -> 1 `i ]
@@ -977,37 +974,37 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $U 307  ]
 [e :U 306 ]
 {
-"162
-[; ;main.c: 162:                         ((TRISC) |= (1<<(1)));
+"161
+[; ;main.c: 161:                         ((TRISC) |= (1<<(1)));
 [e =| _TRISC -> << -> 1 `i -> 1 `i `Vuc ]
-"163
-[; ;main.c: 163:                         atraso_ms(100);
+"162
+[; ;main.c: 162:                         atraso_ms(100);
 [e ( _atraso_ms (1 -> -> 100 `i `ui ]
-"164
-[; ;main.c: 164:                         break;
+"163
+[; ;main.c: 163:                         break;
 [e $U 307  ]
-"165
-[; ;main.c: 165:                     }
+"164
+[; ;main.c: 164:                     }
 }
 [e = _j * _j -> 2 `i ]
 [e $ > _j -> 0 `i 306  ]
 [e :U 307 ]
 }
-"166
-[; ;main.c: 166:                     ((TRISC) &= ~(1<<(1)));
+"165
+[; ;main.c: 165:                     ((TRISC) &= ~(1<<(1)));
 [e =& _TRISC -> ~ << -> 1 `i -> 1 `i `Vuc ]
-"167
-[; ;main.c: 167:                 }
+"166
+[; ;main.c: 166:                 }
 }
 [e ++ _i -> 1 `i ]
 [e $ < _i -> 2 `i 303  ]
 [e :U 304 ]
 }
-"168
-[; ;main.c: 168:                 atraso_ms(1000);
+"167
+[; ;main.c: 167:                 atraso_ms(1000);
 [e ( _atraso_ms (1 -> -> 1000 `i `ui ]
-"169
-[; ;main.c: 169:                 for (int i = 0; i < 2; i++) {
+"168
+[; ;main.c: 168:                 for (int i = 0; i < 2; i++) {
 {
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
@@ -1015,8 +1012,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $U 310  ]
 [e :U 309 ]
 {
-"170
-[; ;main.c: 170:                     for (int j = 1; j > 0; j = j * 2) {
+"169
+[; ;main.c: 169:                     for (int j = 1; j > 0; j = j * 2) {
 {
 [v _j `i ~T0 @X0 1 a ]
 [e = _j -> 1 `i ]
@@ -1024,37 +1021,37 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $U 313  ]
 [e :U 312 ]
 {
-"171
-[; ;main.c: 171:                         ((TRISC) |= (1<<(1)));
+"170
+[; ;main.c: 170:                         ((TRISC) |= (1<<(1)));
 [e =| _TRISC -> << -> 1 `i -> 1 `i `Vuc ]
-"172
-[; ;main.c: 172:                         atraso_ms(100);
+"171
+[; ;main.c: 171:                         atraso_ms(100);
 [e ( _atraso_ms (1 -> -> 100 `i `ui ]
-"173
-[; ;main.c: 173:                         break;
+"172
+[; ;main.c: 172:                         break;
 [e $U 313  ]
-"174
-[; ;main.c: 174:                     }
+"173
+[; ;main.c: 173:                     }
 }
 [e = _j * _j -> 2 `i ]
 [e $ > _j -> 0 `i 312  ]
 [e :U 313 ]
 }
-"175
-[; ;main.c: 175:                     ((TRISC) &= ~(1<<(1)));
+"174
+[; ;main.c: 174:                     ((TRISC) &= ~(1<<(1)));
 [e =& _TRISC -> ~ << -> 1 `i -> 1 `i `Vuc ]
-"176
-[; ;main.c: 176:                 }
+"175
+[; ;main.c: 175:                 }
 }
 [e ++ _i -> 1 `i ]
 [e $ < _i -> 2 `i 309  ]
 [e :U 310 ]
 }
-"177
-[; ;main.c: 177:                 atraso_ms(1000);
+"176
+[; ;main.c: 176:                 atraso_ms(1000);
 [e ( _atraso_ms (1 -> -> 1000 `i `ui ]
-"178
-[; ;main.c: 178:                 for (int i = 0; i < 2; i++) {
+"177
+[; ;main.c: 177:                 for (int i = 0; i < 2; i++) {
 {
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
@@ -1062,8 +1059,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $U 316  ]
 [e :U 315 ]
 {
-"179
-[; ;main.c: 179:                     for (int j = 1; j > 0; j = j * 2) {
+"178
+[; ;main.c: 178:                     for (int j = 1; j > 0; j = j * 2) {
 {
 [v _j `i ~T0 @X0 1 a ]
 [e = _j -> 1 `i ]
@@ -1071,48 +1068,48 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $U 319  ]
 [e :U 318 ]
 {
-"180
-[; ;main.c: 180:                         ((TRISC) |= (1<<(1)));
+"179
+[; ;main.c: 179:                         ((TRISC) |= (1<<(1)));
 [e =| _TRISC -> << -> 1 `i -> 1 `i `Vuc ]
-"181
-[; ;main.c: 181:                         atraso_ms(100);
+"180
+[; ;main.c: 180:                         atraso_ms(100);
 [e ( _atraso_ms (1 -> -> 100 `i `ui ]
-"182
-[; ;main.c: 182:                         break;
+"181
+[; ;main.c: 181:                         break;
 [e $U 319  ]
-"183
-[; ;main.c: 183:                     }
+"182
+[; ;main.c: 182:                     }
 }
 [e = _j * _j -> 2 `i ]
 [e $ > _j -> 0 `i 318  ]
 [e :U 319 ]
 }
-"184
-[; ;main.c: 184:                     ((TRISC) &= ~(1<<(1)));
+"183
+[; ;main.c: 183:                     ((TRISC) &= ~(1<<(1)));
 [e =& _TRISC -> ~ << -> 1 `i -> 1 `i `Vuc ]
-"185
-[; ;main.c: 185:                 }
+"184
+[; ;main.c: 184:                 }
 }
 [e ++ _i -> 1 `i ]
 [e $ < _i -> 2 `i 315  ]
 [e :U 316 ]
 }
-"186
-[; ;main.c: 186:             }
+"185
+[; ;main.c: 185:             }
 }
 [e :U 281 ]
-"188
-[; ;main.c: 188:         }
+"187
+[; ;main.c: 187:         }
 }
 [e :U 280 ]
-"189
-[; ;main.c: 189:     }
+"188
+[; ;main.c: 188:     }
 }
 [e $U 277  ]
 [e :U 278 ]
 }
-"190
-[; ;main.c: 190: }
+"189
+[; ;main.c: 189: }
 [e :UE 276 ]
 }
 [a 5C 109 105 110 0 ]

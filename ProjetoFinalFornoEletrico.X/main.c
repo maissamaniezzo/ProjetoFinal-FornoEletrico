@@ -1,6 +1,5 @@
 // Nome: Maíssa Maniezzo de Oliveira
-// Matrícula: 2020004486  Turma: T02
-// Data: 15/07/2021  Matéria: ECOP14
+// Matrícula: 2020004486
 
 #include <pic18f4520.h>
 #include "config.h"
@@ -31,8 +30,9 @@ void main(void) {
     kpInit();
     
     for (;;) {
-        lcdPosition(0, 1);
         
+        // Tela inicial
+        lcdPosition(0, 1);
         lcd_str("Vamos iniciar!");
         lcdPosition(1, 1);
         lcd_str("Clique em (1)");
@@ -140,7 +140,6 @@ void main(void) {
                         
                         // Liga heater quando atingir a temperatura mínima e desliga quando atinge temperatura máxima
                         if (temperaturaLcd > temperaturaMaxima * 10) {
-                            atraso_ms(100);
                             PORTCbits.RC5 = 0;
                         }
                         if (temperaturaLcd < temperaturaMinima * 10) {
