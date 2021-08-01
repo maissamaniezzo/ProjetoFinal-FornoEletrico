@@ -11,10 +11,6 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$/tmp/xcXgIneIJ.o
-idloc IDLOC 5 200000 200000 8 1
-init CODE 0 0 0 4 1
-config CONFIG 4 300000 300000 E 1
 $dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 cinit CODE 0 187E 187E 16 1
 idloc IDLOC 5 200000 200000 8 1
@@ -45,6 +41,10 @@ text23 CODE 0 16BC 16BC 64 1
 cstackCOMRAM COMRAM 1 1 1 50 1
 smallconst SMALLCONST 0 600 600 46 1
 bssCOMRAM COMRAM 1 51 51 C 1
+config CONFIG 4 300000 300000 E 1
+$/tmp/xcXAnFHOf.o
+idloc IDLOC 5 200000 200000 8 1
+init CODE 0 0 0 4 1
 config CONFIG 4 300000 300000 E 1
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
@@ -450,20 +450,20 @@ B2A text0 CODE >179:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFo
 B2C text0 CODE >180:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
 B38 text0 CODE >183:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
 B3A text0 CODE >184:/home/maissa/MPLABXProjects/ProjetoFinalForno/ProjetoFinalFornoEletrico.X/main.c
-187E cinit CODE >2266:/tmp/xcXehDJaP.s
-187E cinit CODE >2268:/tmp/xcXehDJaP.s
-187E cinit CODE >2271:/tmp/xcXehDJaP.s
-187E cinit CODE >2306:/tmp/xcXehDJaP.s
-1882 cinit CODE >2307:/tmp/xcXehDJaP.s
-1884 cinit CODE >2308:/tmp/xcXehDJaP.s
-1884 cinit CODE >2309:/tmp/xcXehDJaP.s
-1886 cinit CODE >2310:/tmp/xcXehDJaP.s
-1888 cinit CODE >2311:/tmp/xcXehDJaP.s
-188A cinit CODE >2317:/tmp/xcXehDJaP.s
-188A cinit CODE >2320:/tmp/xcXehDJaP.s
-188C cinit CODE >2321:/tmp/xcXehDJaP.s
-188E cinit CODE >2322:/tmp/xcXehDJaP.s
-1890 cinit CODE >2323:/tmp/xcXehDJaP.s
+187E cinit CODE >2266:/tmp/xcXdiCOEC.s
+187E cinit CODE >2268:/tmp/xcXdiCOEC.s
+187E cinit CODE >2271:/tmp/xcXdiCOEC.s
+187E cinit CODE >2306:/tmp/xcXdiCOEC.s
+1882 cinit CODE >2307:/tmp/xcXdiCOEC.s
+1884 cinit CODE >2308:/tmp/xcXdiCOEC.s
+1884 cinit CODE >2309:/tmp/xcXdiCOEC.s
+1886 cinit CODE >2310:/tmp/xcXdiCOEC.s
+1888 cinit CODE >2311:/tmp/xcXdiCOEC.s
+188A cinit CODE >2317:/tmp/xcXdiCOEC.s
+188A cinit CODE >2320:/tmp/xcXdiCOEC.s
+188C cinit CODE >2321:/tmp/xcXdiCOEC.s
+188E cinit CODE >2322:/tmp/xcXdiCOEC.s
+1890 cinit CODE >2323:/tmp/xcXdiCOEC.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -488,7 +488,7 @@ __size_of_lcdInit 0 0 ABS 0 - dist/default/production/ProjetoFinalFornoEletrico.
 __size_of_lcd_str 0 0 ABS 0 - dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 lcdCommand@old_D 7 0 COMRAM 1 cstackCOMRAM dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production/ProjetoFinalFornoEletrico.X.production.o
-__mediumconst 0 0 MEDIUMCONST 0 mediumconst /tmp/xcXgIneIJ.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst /tmp/xcXAnFHOf.o
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 __end_of_atraso_ms 1720 0 CODE 0 text23 dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 __size_of_atraso_ms 0 0 ABS 0 - dist/default/production/ProjetoFinalFornoEletrico.X.production.o
@@ -496,13 +496,13 @@ main@i 3C 0 COMRAM 1 cstackCOMRAM dist/default/production/ProjetoFinalFornoEletr
 main@j 49 0 COMRAM 1 cstackCOMRAM dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 _setTemperature 1400 0 CODE 0 text1 dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 __Lsmallconst 600 0 SMALLCONST 0 smallconst dist/default/production/ProjetoFinalFornoEletrico.X.production.o
-___sp 0 0 STACK 2 stack /tmp/xcXgIneIJ.o
+___sp 0 0 STACK 2 stack /tmp/xcXAnFHOf.o
 _itoa 1268 0 CODE 0 text3 dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 _main 646 0 CODE 0 text0 dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 _perc 59 0 COMRAM 1 bssCOMRAM dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 _tmax 58 0 COMRAM 1 bssCOMRAM dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 _tmin 57 0 COMRAM 1 bssCOMRAM dist/default/production/ProjetoFinalFornoEletrico.X.production.o
-start 0 0 CODE 0 init /tmp/xcXgIneIJ.o
+start 0 0 CODE 0 init /tmp/xcXAnFHOf.o
 __size_of___aldiv 0 0 ABS 0 - dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 __size_of_itoa 0 0 ABS 0 - dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 __size_of_main 0 0 ABS 0 - dist/default/production/ProjetoFinalFornoEletrico.X.production.o
@@ -519,11 +519,11 @@ __Hpowerup 0 0 CODE 0 powerup dist/default/production/ProjetoFinalFornoEletrico.
 lcdPosition@coluna 9 0 COMRAM 1 cstackCOMRAM dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 _kpDebounce FE2 0 CODE 0 text22 dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 _lcdPosition 17C4 0 CODE 0 text2 dist/default/production/ProjetoFinalFornoEletrico.X.production.o
-__accesstop 80 0 ABS 0 - /tmp/xcXgIneIJ.o
-intlevel0 0 0 CODE 0 text /tmp/xcXgIneIJ.o
-intlevel1 0 0 CODE 0 text /tmp/xcXgIneIJ.o
-intlevel2 0 0 CODE 0 text /tmp/xcXgIneIJ.o
-intlevel3 0 0 CODE 0 text /tmp/xcXgIneIJ.o
+__accesstop 80 0 ABS 0 - /tmp/xcXAnFHOf.o
+intlevel0 0 0 CODE 0 text /tmp/xcXAnFHOf.o
+intlevel1 0 0 CODE 0 text /tmp/xcXAnFHOf.o
+intlevel2 0 0 CODE 0 text /tmp/xcXAnFHOf.o
+intlevel3 0 0 CODE 0 text /tmp/xcXAnFHOf.o
 __LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 kpDebounce@old_D 6 0 COMRAM 1 cstackCOMRAM dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 ___aldiv@divisor 5 0 COMRAM 1 cstackCOMRAM dist/default/production/ProjetoFinalFornoEletrico.X.production.o
@@ -548,8 +548,8 @@ __end_of_lcdData 1774 0 CODE 0 text13 dist/default/production/ProjetoFinalFornoE
 __end_of_lcdInit 1578 0 CODE 0 text14 dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 __end_of_lcd_str 17C4 0 CODE 0 text12 dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 ?_setTemperature 19 0 COMRAM 1 cstackCOMRAM dist/default/production/ProjetoFinalFornoEletrico.X.production.o
-___inthi_sp 0 0 STACK 2 stack /tmp/xcXgIneIJ.o
-___intlo_sp 0 0 STACK 2 stack /tmp/xcXgIneIJ.o
+___inthi_sp 0 0 STACK 2 stack /tmp/xcXAnFHOf.o
+___intlo_sp 0 0 STACK 2 stack /tmp/xcXAnFHOf.o
 __size_of_adc_amostra 0 0 ABS 0 - dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 __size_of_Delay40us 0 0 ABS 0 - dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 kpDebounce@valorAntigo 51 0 COMRAM 1 bssCOMRAM dist/default/production/ProjetoFinalFornoEletrico.X.production.o
@@ -592,7 +592,7 @@ __end_of_Delay2ms 1866 0 CODE 0 text18 dist/default/production/ProjetoFinalForno
 ___rparam_used 1 0 ABS 0 - dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 main@minutosCentena 42 0 COMRAM 1 cstackCOMRAM dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 pinMode@pin 1 0 COMRAM 1 cstackCOMRAM dist/default/production/ProjetoFinalFornoEletrico.X.production.o
-isa$xinst 0 0 ABS 0 - /tmp/xcXgIneIJ.o
+isa$xinst 0 0 ABS 0 - /tmp/xcXAnFHOf.o
 pwmSet1@porcento 17 0 COMRAM 1 cstackCOMRAM dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 __size_of_pwmInit 0 0 ABS 0 - dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 __size_of_pwmSet1 0 0 ABS 0 - dist/default/production/ProjetoFinalFornoEletrico.X.production.o
@@ -624,7 +624,7 @@ ___lwdiv@counter 14 0 COMRAM 1 cstackCOMRAM dist/default/production/ProjetoFinal
 main@tempoRelogio 28 0 COMRAM 1 cstackCOMRAM dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 __Hbigram 0 0 ABS 0 bigram dist/default/production/ProjetoFinalFornoEletrico.X.production.o
-__smallconst 600 0 SMALLCONST 0 smallconst /tmp/xcXgIneIJ.o
+__smallconst 600 0 SMALLCONST 0 smallconst /tmp/xcXAnFHOf.o
 lcd_str@i D 0 COMRAM 1 cstackCOMRAM dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 __Hcomram 0 0 ABS 0 comram dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 __Hconfig 30000E 0 CONFIG 4 config dist/default/production/ProjetoFinalFornoEletrico.X.production.o
@@ -756,9 +756,9 @@ main@j_439 4D 0 COMRAM 1 cstackCOMRAM dist/default/production/ProjetoFinalFornoE
 __end_of_pwmFrequency 184A 0 CODE 0 text10 dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 main@tecla 4F 0 COMRAM 1 cstackCOMRAM dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 __Lfardata 0 0 FARRAM 0 fardata dist/default/production/ProjetoFinalFornoEletrico.X.production.o
-isa$std 1 0 ABS 0 - /tmp/xcXgIneIJ.o
-stackhi 5FF 0 ABS 0 - /tmp/xcXgIneIJ.o
-stacklo 80 0 ABS 0 - /tmp/xcXgIneIJ.o
+isa$std 1 0 ABS 0 - /tmp/xcXAnFHOf.o
+stackhi 5FF 0 ABS 0 - /tmp/xcXAnFHOf.o
+stacklo 80 0 ABS 0 - /tmp/xcXAnFHOf.o
 pinMode@type 3 0 COMRAM 1 cstackCOMRAM dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 __Lintcode 0 0 CODE 0 intcode dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 __Lintret 0 0 ABS 0 intret dist/default/production/ProjetoFinalFornoEletrico.X.production.o
@@ -813,7 +813,7 @@ __Ltext20 0 0 ABS 0 text20 dist/default/production/ProjetoFinalFornoEletrico.X.p
 __Ltext21 0 0 ABS 0 text21 dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 __Ltext22 0 0 ABS 0 text22 dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 __Ltext23 0 0 ABS 0 text23 dist/default/production/ProjetoFinalFornoEletrico.X.production.o
-__ramtop 600 0 RAM 0 ramtop /tmp/xcXgIneIJ.o
+__ramtop 600 0 RAM 0 ramtop /tmp/xcXAnFHOf.o
 ___aldiv@dividend 1 0 COMRAM 1 cstackCOMRAM dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 __size_of_lcdPosition 0 0 ABS 0 - dist/default/production/ProjetoFinalFornoEletrico.X.production.o
 __Lpowerup 0 0 CODE 0 powerup dist/default/production/ProjetoFinalFornoEletrico.X.production.o

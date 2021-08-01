@@ -5,7 +5,7 @@ Linker command line:
 -W-3 --edf=/home/maissa/microchip/xc8/v2.32/pic/dat/en_msgs.txt -cn \
   -h+dist/default/production/ProjetoFinalFornoEletrico.X.production.sym \
   --cmf=dist/default/production/ProjetoFinalFornoEletrico.X.production.cmf \
-  -z -Q18F4520 -o/tmp/xcXodLAgm --defsym=__MPLAB_BUILD=1 \
+  -z -Q18F4520 -o/tmp/xcXFfKDnd --defsym=__MPLAB_BUILD=1 \
   -Mdist/default/production/ProjetoFinalFornoEletrico.X.production.map -E1 \
   -ver=XC8 Compiler --acfsm=1493 -ASTACK=080h-05FFh -pstack=STACK \
   -ACODE=00h-07FFFh -ACONST=00h-07FFFh -ASMALLCONST=0600h-06FFhx122 \
@@ -22,7 +22,7 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
-  /tmp/xcXgIneIJ.o \
+  /tmp/xcXAnFHOf.o \
   dist/default/production/ProjetoFinalFornoEletrico.X.production.o 
 
 Object code version is 3.11
@@ -32,7 +32,7 @@ Machine type is 18F4520
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-/tmp/xcXgIneIJ.o
+/tmp/xcXAnFHOf.o
                 idloc                            200000   200000        8        0       5
                 config                           300000   300000        E        0       4
                 init                                  0        0        4        0       0
